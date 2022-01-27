@@ -1,10 +1,12 @@
 //google fonts
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
 //bootstrap depedencies
-@import "../vendors/bootstrap/bootstrap-reboot.min.css";
-@import "../vendors/bootstrap/bootstrap-utilities.min.css";
-@import "../vendors/bootstrap/bootstrap-grid.min.css";
+
+@import "../vendors/bootstrap/bootstrap.min.css";
+
 //custom css
+
 @import './abstracts/variables';
 @import './abstracts/mixins';
 
@@ -16,10 +18,11 @@
 @import './components/button';
 @import './components/card';
 
-@import './layouts/header';
 @import './layouts/footer';
+@import './layouts/header';
 
-@import './pages/home';
+
+@import './pages/index';
 
 
 
