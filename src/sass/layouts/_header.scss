@@ -58,25 +58,51 @@ z-index: 1000;
 }
 
 .nav-right {
-    display: flex;
     width: 35%;
+    padding-bottom: 0.5rem;
 }
-.hello {
-    margin-top: -2rem
+
+.header-icon-1 {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 1rem;
+    margin-top: -0.1rem;
 }
 
 .language {
-    font-size: 1.5rem;
-    margin-top: -3rem;
-    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-top: -0.1rem;
+    margin-left: 0.5rem;
 }
 
-.form-select {
-    width: 4.5rem;
-    margin-top: -3rem;
-    margin-left: 1rem;
+.form-select-1 {
+    width: 4.8rem;
+    height: 2.5rem;
+    margin-top: -0.1rem;
+    margin-left: 0.6rem;
     margin-right: 2rem;
-    border-radius: 0.95rem;
+    border-radius: 1.5rem;
+}
+
+.header-icon-2 {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 1rem;
+    margin-top: -0.1rem;
+}
+
+.currency {
+    font-size: 1.2rem;
+    margin-top: -0.1rem; ;
+    margin-left: 0.2rem;
+}
+
+.form-select-2 {
+    width: 6rem;
+    height: 2.5rem;
+    margin-top: -0.1rem;
+    margin-left: 0.6rem;
+    border-radius: 1.25rem;
 }
 
 .top-section {
