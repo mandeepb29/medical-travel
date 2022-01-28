@@ -1,11 +1,40 @@
-.h1 {
-    background-color: $color-primary;
-    line-height: 2px;
-    font-family: Karla;
-    font-size: 36px;
+.navbar {
+    color: $color-white;
     font-style: normal;
-    font-weight: 800;
-    line-height: 42px;
     letter-spacing: -0.08em;
     text-align: left;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+.navbar-collapse{
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-big {
+    color: $brand-purple;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    text-decoration: none;
+    letter-spacing: -0.08em
+}
+
+.logo-small {
+    color: $brand-purple;
+    font-family: Karla;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    text-align: center;
 }
