@@ -1,0 +1,22 @@
+.btn{
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+    border-radius: 0.6rem;
+
+    &-primary{
+        font-size: 1.45rem;
+        border: 1.5px solid $brand-purple-light ;
+
+        &:hover {
+            color: $color-white;
+            background-color: $brand-purple;
+            border-color: $brand-purple;
+        }
+    }
+
+    &-sm {
+        padding: 0.4rem 1rem;
+        background-color: $color-white;
+        color: $brand-purple;
+    }
+}

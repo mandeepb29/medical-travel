@@ -37,10 +37,11 @@ button{
 body{
     box-sizing: border-box;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
-img{
-    max-width: 100%;
+img {
+    width: 100%;
 }
 
 section{
