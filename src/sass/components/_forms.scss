@@ -1,0 +1,38 @@
+label,.form-label,select, .form-select{
+    transition: $transition-primary;
+} 
+
+label,.form-label{
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: $text-grey;
+}
+
+select, .form-select{
+    font-size: 1.6rem;
+    width: 100%;
+    border: 1.2px solid $light-grey;
+    padding: 1.2rem 1.6rem;
+    line-height: 130%;
+    display: block;
+    border-radius: 0.4rem;
+
+    &:focus, &:active{
+        outline: none;
+        border-color: $brand-purple-light;
+        
+    }
+
+    &-sm{
+        padding: 0.6rem 1rem;
+    }
+}
+
+
+select, .form-select, input, .form-input{
+    &:focus,&:active{
+        box-shadow: 0 0 0 0.25rem lighten($brand-purple,50%);
+    }
+}
+
+

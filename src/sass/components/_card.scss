@@ -1,0 +1,10 @@
+.card{
+    padding:2.4rem 3.6rem;
+    border: 1px solid $border-grey;
+    box-shadow: $shadow-sm;
+    border-radius: 0.8rem;
+
+    &-shadow-xl{
+       box-shadow: $shadow-md;
+    }
+}
