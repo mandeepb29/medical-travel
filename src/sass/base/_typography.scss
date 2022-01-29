@@ -22,6 +22,17 @@ h1 {
     margin-bottom: 2.4rem;
 }
 
+h2 {
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $brand-purple;
+    line-height: 3.36rem;
+    letter-spacing: 2%;
+}
+
 p {
     text-align: left;
     font-size: 2rem;
@@ -31,7 +42,16 @@ p {
 }
 
 h4{
+font-family:Karla; 
+font-weight:700;
+font-size: 2.4rem;
+line-height: 2.4rem;
+letter-spacing: -0.2rem;
+text-align: center;
+}
+
+h5 {
     text-align: right;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
 }
