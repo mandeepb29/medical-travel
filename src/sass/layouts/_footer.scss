@@ -1,4 +1,55 @@
 .footer {
-    background-color: $brand-dark;
+    background-color: $brand-purple;
+    padding: 3rem 0 2rem;
+
+    &-logo{
+        width: 20rem;
+
+        &-wrapper{
+            padding-right: 3rem;
+        }
+    }
+
+    &-menu{
+        margin-bottom: 2rem;
+        &-heading{
+            color:$color-white;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+       
+        &-link{
+            color: $brand-purple-light;
+            text-decoration: none;
+            transition:$transition-primary ;
+            display:block;
+            margin-bottom: 1rem;
+            &:hover{
+                color:$color-white;
+            }
+        }
+    }
 }
 
+
+.social-icons{
+    display: flex;
+    margin-left: 1rem;
+    a{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    svg{
+        color: $color-white;
+       stroke-width: 1.5px;
+    }
+    &-wrapper{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+}

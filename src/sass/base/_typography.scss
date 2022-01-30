@@ -69,6 +69,9 @@ p {
     color: $text-grey;
     text-transform: uppercase;
 }
+.text-300{
+    font-weight: 300 !important;
+}
 .text-400{
     font-weight: 400 !important;
 }
@@ -87,6 +90,9 @@ p {
 }
 .text-grey{
     color: $text-grey !important;
+}
+.text-purple-light{
+    color: $brand-purple-light !important;
 }
 .font-karla{
     font-family: 'Karla', sans-serif;

@@ -129,6 +129,10 @@
 .reason-box{
     margin:2rem 0 5rem;
 
+    .row{
+        align-items: center;
+    }
+
     h4{
         color: $brand-dark;
     }
@@ -144,7 +148,6 @@
 .bottom-left,.bottom-right{
     height: 100%;
     width: auto;
-    
     position: absolute;
     z-index: 0;
 

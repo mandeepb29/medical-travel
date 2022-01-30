@@ -101,6 +101,9 @@ p, .icon-text span {
   color: #404040;
   text-transform: uppercase; }
 
+.text-300 {
+  font-weight: 300 !important; }
+
 .text-400 {
   font-weight: 400 !important; }
 
@@ -118,6 +121,9 @@ p, .icon-text span {
 
 .text-grey, .section-subheading {
   color: #404040 !important; }
+
+.text-purple-light {
+  color: #D1C9EE !important; }
 
 .font-karla {
   font-family: 'Karla', sans-serif; }
@@ -195,6 +201,11 @@ p, .icon-text span {
       .btn-outline-white:hover {
         color: #473198;
         background-color: #ffffff !important; }
+    .btn-outline-purple {
+      border: 1.5px solid #473198 !important;
+      color: #ffffff !important; }
+      .btn-outline-purple:hover {
+        background-color: #473198 !important; }
   .btn-sm {
     padding: 0.4rem 1rem;
     font-size: 1.6rem; }
@@ -216,6 +227,15 @@ p, .icon-text span {
     .btn-icon img, .btn-icon svg {
       width: 2.4rem;
       height: 2.4rem; }
+  .btn-white {
+    background-color: #ffffff;
+    color: #473198; }
+    .btn-white:hover {
+      background-color: #23184b;
+      color: #ffffff; }
+  .btn-text-icon img, .btn-text-icon svg {
+    width: 2.4rem;
+    height: 2.4rem; }
 
 .card, .result-card, .treatment-card-image {
   padding: 2.4rem 3.6rem;
@@ -415,9 +435,6 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
   .destination-card-title {
     color: #ffffff; }
 
-.footer {
-  background-color: #14080E; }
-
 .navbar {
   background: #FFFFFF;
   /* shadow-sm */
@@ -560,6 +577,43 @@ section {
 .top-section {
   padding-top: 12rem; }
 
+.footer {
+  background-color: #473198;
+  padding: 3rem 0 2rem; }
+  .footer-logo {
+    width: 20rem; }
+    .footer-logo-wrapper {
+      padding-right: 3rem; }
+  .footer-menu {
+    margin-bottom: 2rem; }
+    .footer-menu-heading {
+      color: #ffffff;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 3rem; }
+    .footer-menu-link {
+      color: #D1C9EE;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(0.48, 0.01, 0.61, 0.99);
+      display: block;
+      margin-bottom: 1rem; }
+      .footer-menu-link:hover {
+        color: #ffffff; }
+
+.social-icons {
+  display: flex;
+  margin-left: 1rem; }
+  .social-icons a:not(:last-child) {
+    margin-right: 2rem; }
+  .social-icons svg {
+    color: #ffffff;
+    stroke-width: 1.5px; }
+  .social-icons-wrapper {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+
 .section-details {
   background-color: #EBFAEE;
   width: 100%; }
@@ -672,6 +726,8 @@ section {
 
 .reason-box {
   margin: 2rem 0 5rem; }
+  .reason-box .row {
+    align-items: center; }
   .reason-box h4 {
     color: #14080E; }
 

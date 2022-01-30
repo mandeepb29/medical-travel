@@ -61,6 +61,16 @@
                 background-color: $color-white !important;
             }
         }
+
+        &-purple{
+            border: 1.5px solid $brand-purple !important;
+            color: $color-white !important;
+
+
+            &:hover {
+                background-color: $brand-purple !important;
+            }
+        }
     }
 
     &-sm {
@@ -78,6 +88,21 @@
        @include flex-center;
         box-shadow: $shadow-sm;
         border: 1px solid $border-grey;
+        img,svg{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+    &-white{
+        background-color: $color-white;
+        color: $brand-purple;
+
+        &:hover{
+            background-color: darken( $brand-purple,20%);
+            color: $color-white;
+        }
+    }
+    &-text-icon{
         img,svg{
             width: 2.4rem;
             height: 2.4rem;
