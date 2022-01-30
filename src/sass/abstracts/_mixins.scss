@@ -4,6 +4,14 @@
     justify-content: center;
 }
 
+@mixin circle($size) {
+    min-width: $size;
+    min-height: $size;
+   width: $size;
+   height: $size;
+   border-radius: 50%;
+}
+
 //MEDIA QUERY MANAGER - (takes the size of the screen and return the media query code)
 
 @mixin res($break-point){

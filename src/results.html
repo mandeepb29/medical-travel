@@ -75,8 +75,8 @@
           </div>
     </div>
   </nav>
-<!--HEADER STARTS-->
-<!--FIRST SECTION STARTS-->
+<!--HEADER ENDS-->
+<!--Search SECTION STARTS-->
       <section class="top-section bg-cream">
         <div class="container">
             <div class="row">
@@ -125,21 +125,72 @@
          
         </div>
         </section>
-        <!--FIRST SECTION ENDS-->
-        <!--SECOND SECTION STARTS-->
+        <!--Search SECTION ENDS-->
+        <!--Results SECTION STARTS-->
         <section class="results-section">
             <div class="container">
                 <h5 class="heading-border text-dark">
                     Found 248 results for your query
                 </h5>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 container-border container-border-left">
+                      <h5 class="subheading mt-4">
+                        filters
+                    </h5>
 
+
+                    <div class="filter-box">
+                      <div class="card card-shadow-xl card-sm">
+                        <div class="form-group mb-3">
+                          <label for="searchDestinationInput" class="form-label">Destination</label>
+                      <select class="form-select" id="searchDestinationInput">
+                          <option value="">Select Destination</option>
+                          <option value="1">New York</option>
+                          <option value="2">Los Angeles</option>
+                          <option value="3">Chicago</option>
+                          </select>
+                        </div>
+  
+                        <div class="form-group mb-3">
+  
+                          <label for="priceFilterInput" class="form-label">Rating</label>
+  
+                          <div class="btn-check-group btn-group btn-radio-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                            <label class="btn-check-label" for="btnradio1">1</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn-check-label" for="btnradio2">2</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn-check-label" for="btnradio3">3</label>
+  
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn-check-label" for="btnradio4">4</label>
+  
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                            <label class="btn-check-label" for="btnradio5">5</label>
+                          </div>
+                          </div>
+  
+                        <div class="form-group mb-3">
+                          <label for="filterPrice" class="form-label">Price</label>
+  
+                          <select class="form-select" id="filterPrice">
+                          <option value="">Select Price</option>
+                          <option value="1">$0 - $100</option>
+                          <option value="2">$100 - $200</option>
+                          <option value="3">$200 - $300</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-md-9 container-border container-border-right">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="text-400 text-uppercase text-grey mt-4">
+                            <h5 class="subheading">
                                 SHOWING <span class="text-700">
                                     1 - 10
                                 </span>  RESULTS FROM <span class="text-700">
@@ -154,11 +205,166 @@
                                     <option value="2">Price</option>
                                 </select>
                             </div>
+
+                            
+                        </div>
+
+                        <div class="results-list mt-4">
+                          <div class="result-card">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="result-card-img">
+                                  <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?cs=srgb&dl=pexels-pixabay-236380.jpg&fm=jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="result-card-body">
+                                  <div class="result-card-body-content">
+                                    <div>
+                                      <h4 class="result-card-heading">
+                                        Clinic Name
+                                      </h4>
+    
+                                      <div class="icon-text">
+                                        <img src="./img/location-icon.png" alt="clinic location">
+                                        <span>Clinic Country</span>
+                                      </div>
+    
+                                      <p class="p-sm text-grey mt-4">
+                                        he Pantai Hospital Kuala Lumpur is located in Malaysia, providing an extensive range of multi-disciplinary medical services to both local and overseas patients, including comprehensive diagnostic programmes and health screening packages.
+                                      </p>
+                                    </div>
+                                  
+                                   
+                                    <div class="badge-container">
+                                      <span class="badge">
+                                        Treatment 1
+                                      </span>
+                                      <span class="badge">
+                                        Treatment 2
+                                      </span>
+                                      <span class="badge">
+                                        Treatment 3
+                                      </span>
+
+                                      <span class="h5 ml-4 text-grey mb-0">
+                                        + 2 more
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="result-card-body-footer">
+                                    <div>
+                                      <span class="h2 d-inline-block mr-n5 text-dark">
+                                        200
+                                        </span>
+                                        <span class="p-sm text-grey ml-n4">
+                                          /average fees
+                                        </span>
+                                    </div>
+                                 
+                                    <button class="btn btn-primary">
+                                      View Details
+                                    </button>
+                                  </div>
+
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="result-card">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="result-card-img">
+                                  <img src="https://images.pexels.com/photos/6129040/pexels-photo-6129040.jpeg?cs=srgb&dl=pexels-rodnae-productions-6129040.jpg&fm=jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="result-card-body">
+                                  <div class="result-card-body-content">
+                                    <div>
+                                      <h4 class="result-card-heading">
+                                        Clinic Name
+                                      </h4>
+    
+                                      <div class="icon-text">
+                                        <img src="./img/location-icon.png" alt="clinic location">
+                                        <span>Clinic Country</span>
+                                      </div>
+    
+                                      <p class="p-sm text-grey mt-4">
+                                        he Pantai Hospital Kuala Lumpur is located in Malaysia, providing an extensive range of multi-disciplinary medical services to both local and overseas patients, including comprehensive diagnostic programmes and health screening packages.
+                                      </p>
+                                    </div>
+                                  
+                                   
+                                    <div class="badge-container">
+                                      <span class="badge">
+                                        Treatment 1
+                                      </span>
+                                      <span class="badge">
+                                        Treatment 2
+                                      </span>
+                                      <span class="badge">
+                                        Treatment 3
+                                      </span>
+
+                                      <span class="h5 ml-4 text-grey mb-0">
+                                        + 2 more
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="result-card-body-footer">
+                                    <div>
+                                      <span class="h2 d-inline-block mr-n5 text-dark">
+                                        200
+                                        </span>
+                                        <span class="p-sm text-grey ml-n4">
+                                          /average fees
+                                        </span>
+                                    </div>
+                                 
+                                    <button class="btn btn-primary">
+                                      View Details
+                                    </button>
+                                  </div>
+
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="pagination">
+                          <nav aria-label="Results Navigation" class="w-100">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item">
+                                <a class="btn-icon" href="#" tabindex="-1" aria-disabled="true">
+                                  <i class="text-dark" data-feather="chevron-left"></i>
+                                </a>
+                              </li>
+                              <li class="page-item active">
+
+                                <h5 class="pagination-text">
+                                  Page 1 of 25
+                                </h5>
+
+                              </li>
+                              <li class="page-item">
+                                <a class="btn-icon" href="#">
+                                  <i class="text-dark" data-feather="chevron-right"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+         <!--Results SECTION ENDS-->
 
 </body>
 <script src="https://unpkg.com/feather-icons"></script>

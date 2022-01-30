@@ -1,0 +1,13 @@
+.container{
+    &-border{
+        padding-top: 2rem;
+
+        &-left{
+            padding-right: 2rem;
+            border-right: 1px solid $border-grey;
+        }
+        &-right{
+            padding-left: 2rem;
+        }
+    }
+}

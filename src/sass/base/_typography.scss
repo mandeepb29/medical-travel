@@ -13,7 +13,7 @@ span{
     font-size: inherit;
 }
 
-h1,h2,h3,h4,h5,h6,.h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     color: $brand-purple;
@@ -27,11 +27,8 @@ h1 {
     margin-bottom: 2.4rem;
 }
 
-h2 {
-    width: 100%;
-    text-align: center;
+h2,.h2 {
     font-size: 3.2rem;
-    color: $brand-purple;
     line-height: 3.36rem;
     letter-spacing: -0.08rem;
 }
@@ -41,7 +38,7 @@ h4{
     letter-spacing: -0.12rem;
 }
 
-h5{
+h5,.h5{
     font-size: 2rem;
     letter-spacing: -0.1rem;
     margin-bottom: 1rem;
@@ -51,8 +48,19 @@ p {
     text-align: left;
     color: $text-grey;
     line-height: 1.8;
+    line-height: 1.8;
 }
-
+.p{
+    &-sm{
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
+.subheading{
+    font-weight:400 ;
+    color: $text-grey;
+    text-transform: uppercase;
+}
 .text-400{
     font-weight: 400 !important;
 }

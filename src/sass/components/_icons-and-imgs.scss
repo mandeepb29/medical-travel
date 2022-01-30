@@ -1,0 +1,16 @@
+.icon-text{
+    display: flex;
+    align-items: center;
+
+    img,svg{
+        height: 2rem;
+        width: 2rem;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    span{
+        @extend p;
+        margin-left: 0.8rem;
+    }
+}

@@ -1,0 +1,17 @@
+.badge{
+    padding: 0.8rem 1.4rem;
+    background-color: $brand-green;
+    color: $brand-purple;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10rem;
+    &:not(:last-child){
+        margin-right: 1.2rem;
+    }
+
+    &-container{
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
