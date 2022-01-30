@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Medical Travel Wesbite",
   "main": "index.js",
+  "homepage": "https://mandeepb29.github.io",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
   "author": "Mandeep Baghel",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1"
   },
   "dependencies": {
