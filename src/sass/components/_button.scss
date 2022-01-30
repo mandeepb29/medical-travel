@@ -46,4 +46,14 @@
         font-size: 1.6rem;
         
     }
+    &-icon{
+       @include circle(5rem);
+       @include flex-center;
+        box-shadow: $shadow-sm;
+        border: 1px solid $border-grey;
+        img,svg{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
 }
