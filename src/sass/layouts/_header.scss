@@ -4,6 +4,10 @@
 box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
 overflow-y: visible;
 z-index: 1000;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
 }
 
 .navbar-collapse {
@@ -15,35 +19,78 @@ z-index: 1000;
     margin-left: 5%;
     display: flex;
     justify-content: space-between;
-}
 
+    @include res(lg){
+        flex-direction: column;
+        align-items:flex-start;
+        margin-left:0%;
+    }
+
+   
+}
+.navbar-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include res(lg){
+        margin: 2.5rem 0 2rem;
+        align-items: center;
+    }
+
+}
+.navbar-toggler{
+    border: 1px solid $brand-purple-light !important;
+}
+.navbar-toggler-icon {
+    width: 5rem;
+    height: 5rem;
+    background-image: url(/src/img/hamburger.svg) !important;
+    background-position: center;
+    background-size: contain;
+}
+.navbar-nav{
+    @include res(lg){
+        margin-top: 2rem;
+    }
+}
 .navbar-brand-1 {
-    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30rem;  
 }
 
 .logo-big {
     color: $brand-purple;
     font-family: Karla;
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 900;
+    font-size: 3.4rem;
     line-height: 40px;
     text-decoration: none;
-    letter-spacing: -0.08em
+    word-break:keep-all;
+    margin-bottom: 0;
+    letter-spacing: -0.3rem
+
 }
 
 .logo-small {
     color: $brand-purple;
     font-family: Karla;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: translateY(-25%);
     text-decoration: none;
     text-align: center;
 }
 .nav-item{
     margin: 0 1rem;
+
+    @include res(lg){
+        margin:0 0 1.5rem;
+    }
 }
 
 .nav-link {
@@ -55,57 +102,62 @@ z-index: 1000;
     &:hover {
         color: lighten($brand-purple,10%) !important;
     }
+    @include res(sm){
+        font-size: 2rem;
+    }
 }
 
 .nav-right {
-    width: 35%;
-    padding-bottom: 0.5rem;
+
+    @include res(lg){
+        width: 100%;
+        margin-top: 6rem;
+    }
 }
 
-.header-icon-1 {
-    width: 1.4rem;
-    height: 1.4rem;
-    font-size: 1rem;
-    margin-top: -0.5rem;
-}
 
-.language {
+
+// .form-select-1 {
+//     width: 4.8rem;
+//     height: 2.5rem;
+//     margin-top: -0.5rem;
+//     margin-left: 0.6rem;
+//     margin-right: 2rem;
+//     border-radius: 1.5rem;
+// }
+
+// .form-select-2 {
+//     width: 7.1rem;
+//     height: 2.5rem;
+//     margin-top: 0rem;
+//     margin-left: 0.6rem;
+//     border-radius: 1.25rem;
+// }
+.form-select-1,.form-select-2{
     font-size: 1.2rem;
-    margin-top: -0.1rem;
-    margin-left: 0.5rem;
+    border-radius: 5rem;
+    padding: 0;
+    @include res(sm){
+       font-size: 1.6rem;
+       height: 4rem;
+       padding: 0 1rem;
+    }
 }
 
-.form-select-1 {
-    width: 4.8rem;
-    height: 2.5rem;
-    margin-top: -0.5rem;
-    margin-left: 0.6rem;
+.form-select-1{
     margin-right: 2rem;
-    border-radius: 1.5rem;
+}
+svg.header-icon {
+   @include square(1.6rem);
+    margin-right: 0.2rem;
+
+    @include res(lg){
+        @include square(2rem);
+    }
 }
 
-.header-icon-2 {
-    width: 1.4rem;
-    height: 1.4rem;
-    font-size: 1rem;
-    margin-top: -0.2rem;
-}
 
-.currency {
-    font-size: 1.2rem;
-    margin-top: -0.2rem; ;
-    margin-left: 0.2rem;
-}
-
-.form-select-2 {
-    width: 7.1rem;
-    height: 2.5rem;
-    margin-top: 0rem;
-    margin-left: 0.6rem;
-    border-radius: 1.25rem;
-}
-
-.top-section {
-    padding-bottom: 6rem;
-    background-color: $color-white;
+.language,.currency {
+    font-size: 12px;
+    margin-right: 0.6rem;
 }

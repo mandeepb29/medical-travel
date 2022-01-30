@@ -7,6 +7,10 @@ label,.form-label{
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
     color: $text-grey;
+
+    @include res(sm){
+        font-size: 1.6rem;
+    }
 }
 
 select, .form-select{

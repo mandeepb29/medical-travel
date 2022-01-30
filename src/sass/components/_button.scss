@@ -6,24 +6,25 @@
     border:none;
     padding: 1rem 4rem;
     font-size: 1.8rem;
+
+    transition: $transition-primary;
+    transition-duration: 100ms;
+    &:hover{
+        transform: translateY(-2px);
+    }
     &-primary{
         background-color: $brand-purple;
         color: $color-white;
         border: none;
-        transition: $transition-primary;
-        transition-duration: 100ms;
         box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2);
 
         &:hover{
-            transform: translateY(-2px);
             background-color: darken($brand-purple,10%);
         }
         &:active{
             transform: translateY(0);
             background-color: darken($brand-purple,15%);
             box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2) !important;
-
-
         }
          &:focus{
             background-color: $brand-purple;
@@ -31,19 +32,44 @@
         }
     }
     &-outline{
-        border: 1.5px solid $brand-purple-light ;
+        border: 1.5px solid $brand-purple ;
         background-color: transparent;
         color: $brand-purple;
+        font-weight:500;
         &:hover {
             color: $color-white;
             background-color: $brand-purple;
             border-color: $brand-purple;
+        }
+        &:active{
+            transform: translateY(0);
+            background-color: darken($brand-purple,15%);
+            box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2) !important;
+        }
+         &:focus{
+            background-color: $brand-purple;
+            box-shadow: 0 0 0 0.25rem rgba(114, 49, 253, 0.217);
+        }
+
+        &-white{
+            border: 1.5px solid $color-white !important;
+            color: $color-white;
+
+            &:hover {
+                color: $brand-purple;
+                background-color: $color-white !important;
+            }
         }
     }
 
     &-sm {
         padding: 0.4rem 1rem;
         font-size: 1.6rem;
+
+        @include res(sm){
+            padding: 0.7rem 1.4rem;
+            font-size: 1.8rem
+        }
         
     }
     &-icon{

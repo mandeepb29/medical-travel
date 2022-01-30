@@ -10,15 +10,20 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container align-items-center">
          
-            <a class="navbar-brand-1 text-decoration-none nav-left" href="#">
+            <a class="navbar-brand-1 text-decoration-none nav-left" href="./index.html">
               <h2 class="logo-big mb-0 text-center">BEAUTY LOOKS</h1>
               <h3 class="logo-small mb-0 text-center">the best place for medical tourism</h3>
               </a>
-              <div class="navbar-collapse" id="navbarText">
-                <ul class="navbar-nav align-items-center">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsablePart" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              
+              <div class="collapse navbar-collapse" id="navbarCollapsablePart">
+                <ul class="navbar-nav align-items-xl-center">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Destinations</a>
                   </li>
@@ -35,45 +40,407 @@
                 </ul>
 
                 <div class="nav-right">
-                  <div class="d-flex align-items-center justify-content-end">
-                    <i class="header-icon-1" data-feather="globe"></i>
-                    <p class="language">language</p>
-                    <select class="form-select-1 p-0">
-                      <option selected>en</option>
-                      <option value="1">es</option>
-                      <option value="2">fr</option>
-                    </select>
-  
-                    <i class="header-icon-2" data-feather="dollar-sign"></i>
-                    <p class="currency">currency</p>
-                    <select class="form-select-2 p-0 pl-1">
-                      <option selected>dollar</option>
-                      <option value="1">euro</option>
-                      <option value="2">pound</option>
-                    </select>
+                  <div class="d-flex align-items-center justify-content-between justify-content-xl-end">
+                    <div class="d-flex align-items-center">
+                      <i class="header-icon" data-feather="globe"></i>
+                      <p class="language">language</p>
+                      <select class="form-select-1">
+                        <option selected>en</option>
+                        <option value="1">es</option>
+                        <option value="2">fr</option>
+                      </select>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <i class="header-icon" data-feather="dollar-sign"></i>
+                      <p class="currency">currency</p>
+                      <select class="form-select-2">
+                        <option selected>dollar</option>
+                        <option value="1">euro</option>
+                        <option value="2">pound</option>
+                      </select>
+                    </div>
+                    
                   </div>
-                  <h4 class="mt-1 text-right">1-800-550-00-89</h4>
+                  <div class="navbar-contact">
+                    <h4 class="mt-1 text-dark mb-0">1-800-550-00-89</h4>
+                    <span class="p-xs text-grey">contact us</span>
+                  </div>
+                  
 
         </div>
       </div>
+    
     </div>
   </nav>
 
-  <section class="top-section">
+  <section class="top-section hero-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-md-5 hero-section-left">
           <h1>Find the right doctors and clinic for you across the world.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla</p>
+          <div class="row">
+            <div class="col-10">
+              <p class="p-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                purus sit amet luctus venenatis, lectus magna fringilla</p>
+            </div>
+          </div>
+          
+         
         </div>
-        <div class="col-sm-7">
-          <img src="../src/img/top-section-image.png" alt="#">
+        <div class="col-md-7">
+          <img src="../src/img/top-section-image.png" alt="#" class="d-none d-md-block">
         </div>
+      </div>
+      <div class="search-box">
+        <div class="card">
+          <h5>
+            Search for clinics, treatments and locations
+          </h5>
+
+          <div class="row mt-3">
+              <div class="col-sm-9">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="form-group mb-4 mb-sm-0">
+                              <label for="exampleFormControlInput1" class="form-label">Procedure</label>
+                          <select type="email" class="form-select" id="searchProcedureInput">
+                              <option value="">Select Procedure</option>
+                              <option value="1">Procedure 1</option>
+                              <option value="2">Procedure 2</option>
+                              <option value="3">Procedure 3</option>
+                              <option value="4">Procedure 4</option>
+                              </select>
+                          </div>
+                          
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="form-group mb-4 mb-sm-0">
+                              <label for="exampleFormControlInput1" class="form-label">Destination</label>
+                          <select type="email" class="form-select" id="searchDestinationInput">
+                              <option value="">Select Destination</option>
+                              <option value="1">New York</option>
+                              <option value="2">Los Angeles</option>
+                              <option value="3">Chicago</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 d-flex justify-content-end align-items-end">
+                      <button type="button" class="btn btn-primary">Search</button>
+              </div>
+          </div>
+      </div>
       </div>
     </div>
 
   </section>
+
+  <section class="treatment-section bg-cream">
+    <div class="container">
+      <h2>
+        Popular Treatments
+      </h2>
+      <p class="section-subheading">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit laborum blanditiis in quas earum est 
+      </p>
+
+      <div class="treatment-list my-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="treatment-card">
+              <div class="treatment-card-image">
+                <img src="../src/img/treatment-img.png" alt="#">
+              </div>
+              <div class="treatment-card-content">
+                <div>
+                  <h5 class="text-dark mb-2">
+                    Lorem ipsum 
+                  </h5>
+                  <p class="p-sm text-grey">
+                    Subtreatment 1, Sub treatment 2, Sub treatment 3, Sub treatment 4
+                  </p>
+                </div>
+                
+                <div class="d-flex mt-2">
+                  <a href="#" class="btn btn-outline btn-sm">
+                    See clinics
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-primary">
+          View all treatments
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="destination-section">
+    <div class="container">
+      <h2>
+        Popular Destinations for Treatments
+      </h2>
+
+      <div class="destination-list">
+            <div class="destination-card">
+              <div class="destination-card-overlay"></div>
+                <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+              <div class="destination-card-content">
+                <h4 class="destination-card-title">
+                  Japan
+                </h4>
+                <div class="text-right">
+                  <a href="" class="btn btn-sm btn-outline-white">
+                    See Clinics
+                  </a>
+                </div>
+                
+              </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-card-overlay"></div>
+            <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+          <div class="destination-card-content">
+            <h4 class="destination-card-title">
+              Japan
+            </h4>
+            <div class="text-right">
+              <a href="" class="btn btn-sm btn-outline-white">
+                See Clinics
+              </a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="destination-card">
+      <div class="destination-card-overlay"></div>
+        <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+      <div class="destination-card-content">
+        <h4 class="destination-card-title">
+          Japan
+        </h4>
+        <div class="text-right">
+          <a href="" class="btn btn-sm btn-outline-white">
+            See Clinics
+          </a>
+        </div>
+        
+      </div>
+</div>
+<div class="destination-card">
+  <div class="destination-card-overlay"></div>
+    <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+  <div class="destination-card-content">
+    <h4 class="destination-card-title">
+      Japan
+    </h4>
+    <div class="text-right">
+      <a href="" class="btn btn-sm btn-outline-white">
+        See Clinics
+      </a>
+    </div>
+    
+  </div>
+</div>
+     
+        <div class="destination-card">
+          <div class="destination-card-overlay"></div>
+            <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+          <div class="destination-card-content">
+            <h4 class="destination-card-title">
+              Japan
+            </h4>
+            <div class="text-right">
+              <a href="" class="btn btn-sm btn-outline-white">
+                See Clinics
+              </a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="destination-card">
+      <div class="destination-card-overlay"></div>
+        <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+      <div class="destination-card-content">
+        <h4 class="destination-card-title">
+          Japan
+        </h4>
+        <div class="text-right">
+          <a href="" class="btn btn-sm btn-outline-white">
+            See Clinics
+          </a>
+        </div>
+        
+      </div>
+</div>
+<div class="destination-card">
+  <div class="destination-card-overlay"></div>
+    <img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+  <div class="destination-card-content">
+    <h4 class="destination-card-title">
+      Japan
+    </h4>
+    <div class="text-right">
+      <a href="" class="btn btn-sm btn-outline-white">
+        See Clinics
+      </a>
+    </div>
+    
+  </div>
+</div>
+<div class="destination-card">
+<div class="destination-card-overlay"></div>
+<img src="https://images.pexels.com/photos/3800117/pexels-photo-3800117.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#" class="destination-card-image">
+<div class="destination-card-content">
+<h4 class="destination-card-title">
+  Japan
+</h4>
+<div class="text-right">
+  <a href="" class="btn btn-sm btn-outline-white">
+    See Clinics
+  </a>
+</div>
+
+</div>
+</div>
+  </div>
+
+  <div class="text-center">
+    <a href="#" class="btn btn-primary">
+      View all Destinations
+    </a>
+  </div>
+
+      </div>
+      </section>
+
 
   <section class="section-details">
     <div class="container">
@@ -276,5 +643,5 @@
 </body>
 <script src="https://unpkg.com/feather-icons"></script>
 <script>feather.replace();</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
