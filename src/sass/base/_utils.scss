@@ -1,7 +1,9 @@
 .bg-cream{
     background-color: $color-cream !important;
 }
-
+.bg-dark{
+    background-color: $brand-dark !important;
+}
 .heading-border{
     border-bottom: 1px solid $border-grey;
     padding-bottom: 1rem;

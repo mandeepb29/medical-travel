@@ -29,6 +29,7 @@
     }
 
     @include res(sm){
+        background-repeat: no-repeat;
         background-image: url(/src/img/hero-mobile-bg.png);
         background-position:center 6rem;
         background-size: 100%;
@@ -60,74 +61,120 @@
     margin-bottom: 2rem;
 }
 .register {
-    margin-top: 5rem;
+    padding-bottom: 5rem;
 }
-
-.p-big {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.4;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 .steps-wrapper{
     padding-left: 5rem;
+
+    @include res(md){
+        margin: 6rem 0 4rem;
+        padding-left: 0;
+    }
 }
 
 .single-step{
     display: flex;
     align-items: center;
-    width: 75%;
+
+    @include res(md){
+        max-width: 100%;
+    }
     .content{
         flex-grow: 1;
         padding-left: 2rem;
     }
 
     &:not(:last-child){
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
     }
     &:nth-child(2){
-        transform: translateX(30%);
+        padding-left: 15%;
+    }
+
+    h4{
+        color: $brand-dark;
     }
 }
 
 .step-1 {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 6rem;
     margin-bottom: 0;
     text-align: center;
     box-shadow: $shadow-xl;
-    color: #000000;
+    color: $text-grey;
+    background-color: $color-white;
     @include flex-center;
-    @include circle(8rem);  
-    z-index: 1000;
+    @include circle(9rem);  
+    z-index: 10;
 }
 
 .steps-bg{
-    top: 0;
+   bottom: 0;
     right: 0;
     z-index: -1;
-    height: 100%;
-    width: 48%;
+    height: 80%;
+    width: 50%;
     position: absolute;
     border-top-left-radius: 12rem;
     background-color: $color-cream;
+
+    @include res(md){
+        width: 100%;
+        height: 60%;
+        bottom: 0;
+        top: auto;
+    }
+}
+.reason-box{
+    margin:2rem 0 5rem;
+
+    h4{
+        color: $brand-dark;
+    }
+}
+.reasons-list{
+    margin-top: 4rem;
+}
+.steps-img{
+    border-radius: 2.4rem 4.8rem;
+    box-shadow: $shadow-xl;
 }
 
+.bottom-left,.bottom-right{
+    height: 100%;
+    width: auto;
+    
+    position: absolute;
+    z-index: 0;
+
+    @include res(sm){
+        max-width: 35vw;
+        height: auto;
+    }
+    
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
 
 .bottom-left {
-    top: -0.1rem;
+    bottom: -0.1rem;
     left: -0.7rem;
-    height: 45%;
-    width: 20%;
-    position: absolute;
+  
 }
 
 .bottom-right {
     top: -0.1rem;
     right: -0.5em;
-    height: 45%;
-    width: 20%;
-    position: absolute;
+   
+}
+
+.text-bottom {
+   
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: $color-white;
 }
