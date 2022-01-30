@@ -84,10 +84,8 @@ h5 {
 
 p {
   text-align: left;
-  font-size: 2rem;
-  font-weight: 400;
   color: #404040;
-  line-height: 135%; }
+  line-height: 1.8; }
 
 .text-400 {
   font-weight: 400 !important; }
@@ -117,6 +115,9 @@ p {
   border-bottom: 1px solid #EDEDED;
   padding-bottom: 1rem;
   margin-bottom: 0; }
+
+.text-right {
+  text-align: right; }
 
 .btn {
   font-size: 1.6rem;
@@ -189,7 +190,6 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
   box-shadow: 0 0 0 0.25rem #dcd6f2; }
 
 .section-details {
-  position: absolute;
   background-color: #EBFAEE;
   width: 100%; }
 
@@ -199,13 +199,14 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
 
 .about-text {
   margin-bottom: 5rem;
-  font-family: Work Sans;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.9rem;
+  line-height: 1.7;
   letter-spacing: -0.01em;
   color: #404040;
   text-align: left; }
+
+.section-register {
+  background-color: #ffffff;
+  width: 100%; }
 
 nav {
   background: #FFFFFF;
@@ -265,7 +266,7 @@ nav {
   width: 1.4rem;
   height: 1.4rem;
   font-size: 1rem;
-  margin-top: -0.1rem; }
+  margin-top: -0.5rem; }
 
 .language {
   font-size: 1.2rem;
@@ -275,7 +276,7 @@ nav {
 .form-select-1 {
   width: 4.8rem;
   height: 2.5rem;
-  margin-top: -0.1rem;
+  margin-top: -0.5rem;
   margin-left: 0.6rem;
   margin-right: 2rem;
   border-radius: 1.5rem; }
@@ -284,17 +285,17 @@ nav {
   width: 1.4rem;
   height: 1.4rem;
   font-size: 1rem;
-  margin-top: -0.1rem; }
+  margin-top: -0.2rem; }
 
 .currency {
   font-size: 1.2rem;
-  margin-top: -0.1rem;
+  margin-top: -0.2rem;
   margin-left: 0.2rem; }
 
 .form-select-2 {
-  width: 6rem;
+  width: 7.1rem;
   height: 2.5rem;
-  margin-top: -0.1rem;
+  margin-top: 0rem;
   margin-left: 0.6rem;
   border-radius: 1.25rem; }
 

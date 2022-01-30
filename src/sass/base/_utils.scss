@@ -2,10 +2,13 @@
     background-color: $color-cream !important;
 }
 
-
 .heading-border{
     border-bottom: 1px solid $border-grey;
     padding-bottom: 1rem;
     margin-bottom: 0;
-
 }
+
+.text-right {
+    text-align: right;
+}
+

@@ -1,5 +1,4 @@
 .section-details {
-    position: absolute;
     background-color: $brand-green-light;
     width: 100%;
 }
@@ -12,11 +11,14 @@
 
 .about-text {
     margin-bottom: 5rem;
-    font-family: Work Sans;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.9rem;
+    line-height: 1.7;
     letter-spacing: -0.01em;
     color: $text-grey;
     text-align: left;
+}
+
+
+.section-register {
+    background-color: $color-white;
+    width: 100%;
 }
