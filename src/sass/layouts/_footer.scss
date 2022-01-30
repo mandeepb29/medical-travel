@@ -1,24 +1,13 @@
-.section-details {
-    background-color: $brand-green-light;
-    width: 100%;
+.footer {
+    margin-top: 5rem;
+    background-color: $brand-dark;
 }
 
-.logo-icon {
-    // width: 4.5rem;
-    height: auto;
-    margin: 0 auto;
-}
-
-.about-text {
-    margin-bottom: 5rem;
-    line-height: 1.7;
-    letter-spacing: -0.01em;
-    color: $text-grey;
-    text-align: left;
-}
-
-
-.section-register {
-    background-color: $color-white;
-    width: 100%;
+.text-bottom {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 105%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: $light-grey;
 }

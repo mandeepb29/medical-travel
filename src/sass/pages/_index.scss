@@ -1,0 +1,91 @@
+.section-details {
+    background-color: $brand-green-light;
+    width: 100%;
+}
+
+.logo-icon {
+    // width: 4.5rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 5rem;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+    color: $text-grey;
+    text-align: left;
+}
+
+.register {
+    margin-top: 5rem;
+}
+
+.p-big {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.steps-wrapper{
+    padding-left: 5rem;
+}
+
+.single-step{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    .content{
+        flex-grow: 1;
+        padding-left: 2rem;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 5rem;
+    }
+    &:nth-child(2){
+        transform: translateX(30%);
+    }
+}
+
+.step-1 {
+    font-weight: 300;
+    font-size: 6rem;
+    margin-bottom: 0;
+    text-align: center;
+    box-shadow: $shadow-xl;
+    color: #000000;
+    @include flex-center;
+    @include circle(8rem);  
+    z-index: 1000;
+}
+
+.steps-bg{
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 48%;
+    position: absolute;
+    border-top-left-radius: 12rem;
+    background-color: $color-cream;
+}
+
+
+.bottom-left {
+    top: -0.1rem;
+    left: -0.7rem;
+    height: 45%;
+    width: 20%;
+    position: absolute;
+}
+
+.bottom-right {
+    top: -0.1rem;
+    right: -0.5em;
+    height: 45%;
+    width: 20%;
+    position: absolute;
+}
