@@ -30,7 +30,7 @@
 
     @include res(sm){
         background-repeat: no-repeat;
-        background-image: url(/src/img/hero-mobile-bg.png);
+        background-image: url(../img/hero-mobile-bg.png);
         background-position:center 6rem;
         background-size: 100%;
     }

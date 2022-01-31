@@ -345,6 +345,9 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       display: flex;
       justify-content: space-between;
       align-items: center; }
+    @media (max-width: 47.99em) {
+      .result-card-body {
+        margin-top: 1rem; } }
 
 .icon-text {
   display: flex;
@@ -476,7 +479,7 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
 .navbar-toggler-icon {
   width: 5rem;
   height: 5rem;
-  background-image: url(/src/img/hamburger.svg) !important;
+  background-image: url(../img/hamburger.svg) !important;
   background-position: center;
   background-size: contain; }
 
@@ -639,7 +642,7 @@ section {
 @media (max-width: 47.99em) {
   .hero-section {
     background-repeat: no-repeat;
-    background-image: url(/src/img/hero-mobile-bg.png);
+    background-image: url(../img/hero-mobile-bg.png);
     background-position: center 6rem;
     background-size: 100%; } }
 
