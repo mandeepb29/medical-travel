@@ -262,18 +262,18 @@ label, .form-label {
     label, .form-label {
       font-size: 1.6rem; } }
 
-select, .form-select {
+select, .form-select, input, .form-input {
   font-size: 1.6rem;
   width: 100%;
   border: 1.4px solid #D6D6D6;
-  padding: 1.2rem 1.6rem;
+  padding: 1.2rem 1.4rem;
   line-height: 130%;
   display: block;
   border-radius: 0.4rem; }
-  select:focus, select:active, .form-select:focus, .form-select:active {
+  select:focus, select:active, .form-select:focus, .form-select:active, input:focus, input:active, .form-input:focus, .form-input:active {
     outline: none;
     border-color: #D1C9EE; }
-  select-sm, .form-select-sm {
+  select-sm, .form-select-sm, input-sm, .form-input-sm {
     padding: 0.6rem 1rem; }
 
 select:focus, select:active, .form-select:focus, .form-select:active, input:focus, input:active, .form-input:focus, .form-input:active {
@@ -811,14 +811,14 @@ section {
   width: 2.5rem; }
 
 .quote-top {
-  top: 10px;
+  top: 0px;
   bottom: 0px;
   left: 0px;
   z-index: -30;
-  height: 120%;
+  height: 60%;
   width: 100%;
   position: absolute;
-  border-radius: 0px 0px 0px 100px;
+  border-radius: 0px 0px 0px 120px;
   background-image: linear-gradient(to right, #FCF7F3, transparent); }
 
 .clinic-free-quote-btn {

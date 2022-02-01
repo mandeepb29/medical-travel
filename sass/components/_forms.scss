@@ -13,11 +13,11 @@ label,.form-label{
     }
 }
 
-select, .form-select{
+select, .form-select, input, .form-input{
     font-size: 1.6rem;
     width: 100%;
     border: 1.4px solid $light-grey;
-    padding: 1.2rem 1.6rem;
+    padding: 1.2rem 1.4rem;
     line-height: 130%;
     display: block;
     border-radius: 0.4rem;
@@ -25,7 +25,6 @@ select, .form-select{
     &:focus, &:active{
         outline: none;
         border-color: $brand-purple-light;
-        
     }
 
     &-sm{
