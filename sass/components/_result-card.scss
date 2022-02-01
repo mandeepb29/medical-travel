@@ -28,6 +28,16 @@
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
+
+            &-top{
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+                &-right{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
         
         &-footer{

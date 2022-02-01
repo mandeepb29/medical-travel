@@ -362,6 +362,13 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       flex-direction: column;
       justify-content: space-between;
       height: 100%; }
+      .result-card-body-content-top {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between; }
+        .result-card-body-content-top-right {
+          display: flex;
+          flex-direction: column; }
     .result-card-body-footer {
       border-top: 1px solid #EDEDED;
       padding-top: 1rem;
