@@ -44,9 +44,15 @@ h5,.h5{
     margin-bottom: 1rem;
 }
 
+h6,.h6{
+    font-size: 1.8rem;
+    letter-spacing: -0.08rem;
+    margin-bottom: 0.8rem;
+}
+
 p {
     text-align: left;
-    color: $text-grey;
+    color: $brand-dark;
     line-height: 1.8;
     line-height: 1.8;
 }
@@ -91,9 +97,25 @@ p {
 .text-grey{
     color: $text-grey !important;
 }
+.text-purple{
+    color: $brand-purple !important;
+}
 .text-purple-light{
     color: $brand-purple-light !important;
 }
 .font-karla{
     font-family: 'Karla', sans-serif;
+}
+
+.link{
+    text-decoration: underline;
+    font-weight: 500;
+
+    &-primary{
+        color: $brand-purple;
+
+        &:hover{
+            color: $brand-purple-light;
+        }
+    }
 }

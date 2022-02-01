@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
 @import url(../vendors/bootstrap/bootstrap.min.css);
 *,
@@ -79,9 +80,14 @@ h5, .h5 {
   letter-spacing: -0.1rem;
   margin-bottom: 1rem; }
 
+h6, .h6 {
+  font-size: 1.8rem;
+  letter-spacing: -0.08rem;
+  margin-bottom: 0.8rem; }
+
 p, .icon-text span {
   text-align: left;
-  color: #404040;
+  color: #14080E;
   line-height: 1.8;
   line-height: 1.8; }
 
@@ -122,11 +128,22 @@ p, .icon-text span {
 .text-grey, .section-subheading {
   color: #404040 !important; }
 
+.text-purple {
+  color: #473198 !important; }
+
 .text-purple-light {
   color: #D1C9EE !important; }
 
 .font-karla {
   font-family: 'Karla', sans-serif; }
+
+.link {
+  text-decoration: underline;
+  font-weight: 500; }
+  .link-primary {
+    color: #473198; }
+    .link-primary:hover {
+      color: #D1C9EE; }
 
 .bg-cream {
   background-color: #FCF7F3 !important; }
@@ -141,6 +158,9 @@ p, .icon-text span {
 
 .text-right {
   text-align: right; }
+
+.bg-light {
+  background-color: #D6D6D6; }
 
 .pagination {
   width: 100%;
@@ -248,7 +268,7 @@ p, .icon-text span {
   background-color: #ffffff; }
   .card-shadow-xl {
     box-shadow: 0px 18px 30px 2px rgba(0, 0, 0, 0.08); }
-  .card-sm, .result-card {
+  .card-sm, .result-card, .review-card {
     padding: 2rem 2.4rem; }
 
 label, .form-label, select, .form-select {
@@ -462,6 +482,36 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
     display: flex;
     flex-direction: column;
     height: 100%; }
+
+.review-card {
+  margin-top: 1.6rem; }
+  .review-card-top {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between; }
+    .review-card-top-right {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      text-align: right; }
+
+:root {
+  --star-size: 2.2rem;
+  --star-color: #d1d1d1;
+  --star-background: #fc0; }
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1; }
+  .Stars::before {
+    content: '★★★★★';
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .navbar {
   background: #FFFFFF;
@@ -833,6 +883,13 @@ section {
   padding-bottom: 1rem;
   border-bottom: 1px solid #EDEDED; }
 
+.clinic-page-container section {
+  padding: 3rem 0; }
+
+.clinic-hero-section {
+  padding-bottom: 6rem;
+  overflow: visible; }
+
 .clinic-stats {
   margin-top: 3rem; }
 
@@ -855,10 +912,44 @@ section {
   background-color: #FCF7F3;
   z-index: -1;
   width: 55%;
-  height: 100%;
+  height: 95%;
   border-top-right-radius: 6.4rem;
   border-bottom-left-radius: 6.4rem;
   border-bottom-right-radius: 6.4rem; }
+  @media (max-width: 47.99em) {
+    .clinic-bg {
+      width: 95%;
+      height: 34%;
+      border-bottom-left-radius: 0rem; } }
 
 .clinic-about-section p, .clinic-about-section .icon-text span, .icon-text .clinic-about-section span {
   margin-top: 2rem; }
+
+.clinic-review-section {
+  padding-bottom: 7rem !important; }
+
+.photo-container {
+  margin: 2rem 0; }
+
+.inline-gallery-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%; }
+
+.lg-sub-html {
+  padding: 0; }
+
+.lightGallery-captions {
+  background-color: rgba(20, 8, 14, 0.4);
+  padding: 0.2rem 0; }
+  .lightGallery-captions h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #ffffff; }
+  .lightGallery-captions p, .lightGallery-captions .icon-text span, .icon-text .lightGallery-captions span {
+    font-size: 12px;
+    margin-top: 0;
+    color: #D6D6D6; }
+  .lightGallery-captions h4, .lightGallery-captions p, .lightGallery-captions .icon-text span, .icon-text .lightGallery-captions span {
+    text-align: center; }

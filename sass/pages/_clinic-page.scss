@@ -5,6 +5,17 @@
         border-bottom: 1px solid $border-grey;
     }
 
+    &-page-container{
+        section{
+            padding: 3rem 0;
+        }
+    }
+
+    &-hero-section{
+        padding-bottom: 6rem;
+        overflow: visible;
+    }
+
     &-stats{
         margin-top: 3rem;
     }
@@ -34,10 +45,16 @@
          background-color: $color-cream;
          z-index: -1;
          width: 55%;
-         height: 100%;
+         height: 95%;
          border-top-right-radius: 6.4rem;
          border-bottom-left-radius: 6.4rem;
          border-bottom-right-radius: 6.4rem;
+
+         @include res(sm){
+            width: 95%;
+            height: 34%;
+            border-bottom-left-radius: 0rem;
+         }
     }
 
     &-about-section{
@@ -45,4 +62,45 @@
             margin-top: 2rem;
         }
     }
+    &-review-section{
+        padding-bottom: 7rem !important;
+
+    }
 }
+
+.photo-container{
+    margin: 2rem 0
+}
+
+
+.inline-gallery-container {
+    width: 100%;
+
+    // set 60% height
+    height: 0;
+    padding-bottom: 65%;
+}
+.lg-sub-html{
+    padding:  0;
+}
+  .lightGallery-captions{
+      background-color: rgba($brand-dark, 0.4);
+      padding: 0.2rem 0;
+      h4{
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-bottom: 0.2rem;
+          color: $color-white;
+      }
+
+      p{
+          font-size: 12px;
+          margin-top: 0;
+          color: $light-grey;
+      }
+      h4,p{
+          
+          text-align: center;
+      }
+  }
+  
