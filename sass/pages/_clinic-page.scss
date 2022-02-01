@@ -1,0 +1,48 @@
+.clinic{
+    &-free-quote-btn{
+        margin-top: 6rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $border-grey;
+    }
+
+    &-stats{
+        margin-top: 3rem;
+    }
+    &-single-stat{
+    
+        img{
+            width: 5rem;
+            margin-bottom: 1.6rem;
+        }
+
+        h4{
+            margin-bottom: 0.4rem;
+            color: $brand-dark;
+        }
+
+    }
+
+    &-img{
+        border-radius:6.4rem 2.4rem 2.4rem 2.4rem;
+        box-shadow: $shadow-xl;
+    }
+
+    &-bg{
+         position: absolute;
+         top: 0;
+         left:0;
+         background-color: $color-cream;
+         z-index: -1;
+         width: 55%;
+         height: 100%;
+         border-top-right-radius: 6.4rem;
+         border-bottom-left-radius: 6.4rem;
+         border-bottom-right-radius: 6.4rem;
+    }
+
+    &-about-section{
+        p{
+            margin-top: 2rem;
+        }
+    }
+}

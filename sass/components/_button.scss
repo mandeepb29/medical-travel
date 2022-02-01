@@ -1,7 +1,7 @@
 .btn{
     font-size: 1.6rem;
     padding: 1rem 1.6rem;
-    border-radius: 0.6rem;
+    border-radius: 0.4rem;
     outline: none;
     border:none;
     padding: 1rem 4rem;
@@ -82,6 +82,10 @@
             font-size: 1.8rem
         }
         
+    }
+    &-md {
+        padding: 0.6rem 1.6rem;
+        font-size: 1.7rem;
     }
     &-icon{
        @include circle(5rem);

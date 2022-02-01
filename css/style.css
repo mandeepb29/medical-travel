@@ -92,7 +92,7 @@ p, .icon-text span {
 .p-xs {
   font-size: 10px; }
 
-.p-big, .section-subheading {
+.p-big, .icon-text-big span, .section-subheading {
   font-size: 1.8rem;
   line-height: 1.35; }
 
@@ -156,7 +156,7 @@ p, .icon-text span {
 .btn {
   font-size: 1.6rem;
   padding: 1rem 1.6rem;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   outline: none;
   border: none;
   padding: 1rem 4rem;
@@ -213,6 +213,9 @@ p, .icon-text span {
       .btn-sm {
         padding: 0.7rem 1.4rem;
         font-size: 1.8rem; } }
+  .btn-md {
+    padding: 0.6rem 1.6rem;
+    font-size: 1.7rem; }
   .btn-icon {
     min-width: 5rem;
     min-height: 5rem;
@@ -237,7 +240,7 @@ p, .icon-text span {
     width: 2.4rem;
     height: 2.4rem; }
 
-.card, .result-card, .treatment-card-image {
+.card, .result-card, .treatment-card-image, .review-card {
   padding: 2.4rem 3.6rem;
   border: 1px solid #EDEDED;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
@@ -307,7 +310,7 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
     padding-left: 2rem; }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  padding-right: var(--bs-gutter-x, 2.75rem);
+  padding-right: var(--bs-gutter-x, 1.25rem);
   padding-left: var(--bs-gutter-x, 1.25rem); }
   @media (max-width: 47.99em) {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -359,10 +362,13 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
     object-position: center; }
   .icon-text span {
     margin-left: 0.8rem; }
+  .icon-text-big img, .icon-text-big svg {
+    height: 3rem;
+    width: 3rem; }
 
 .badge {
   padding: 0.8rem 1.4rem;
-  background-color: #A1E8AF;
+  background-color: #D1C9EE;
   color: #473198;
   font-size: 1.2rem;
   font-weight: 500;
@@ -438,6 +444,25 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
   .destination-card-title {
     color: #ffffff; }
 
+.doctor-card {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid #EDEDED;
+  background-color: #FCF7F3;
+  display: grid;
+  grid-template-columns: 16rem 1fr; }
+  .doctor-card-img {
+    height: 20rem;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 0.8rem; }
+  .doctor-card-content {
+    padding-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+
 .navbar {
   background: #FFFFFF;
   /* shadow-sm */
@@ -454,7 +479,7 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
 
 .navbar-collapse {
   width: 100%;
-  margin-left: 5%;
+  margin-left: 3vw;
   display: flex;
   justify-content: space-between; }
   @media (max-width: 74.99em) {
@@ -567,7 +592,7 @@ svg.header-icon {
   margin-right: 0.6rem; }
 
 section {
-  padding: 3rem 0;
+  padding: 4.5rem 0;
   position: relative;
   width: 100%;
   overflow: hidden; }
@@ -795,3 +820,38 @@ section {
   position: absolute;
   border-radius: 0px 0px 0px 100px;
   background-image: linear-gradient(to right, #FCF7F3, transparent); }
+
+.clinic-free-quote-btn {
+  margin-top: 6rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #EDEDED; }
+
+.clinic-stats {
+  margin-top: 3rem; }
+
+.clinic-single-stat img {
+  width: 5rem;
+  margin-bottom: 1.6rem; }
+
+.clinic-single-stat h4 {
+  margin-bottom: 0.4rem;
+  color: #14080E; }
+
+.clinic-img {
+  border-radius: 6.4rem 2.4rem 2.4rem 2.4rem;
+  box-shadow: 0px 35px 50px 2px rgba(0, 0, 0, 0.12); }
+
+.clinic-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FCF7F3;
+  z-index: -1;
+  width: 55%;
+  height: 100%;
+  border-top-right-radius: 6.4rem;
+  border-bottom-left-radius: 6.4rem;
+  border-bottom-right-radius: 6.4rem; }
+
+.clinic-about-section p, .clinic-about-section .icon-text span, .icon-text .clinic-about-section span {
+  margin-top: 2rem; }

@@ -13,4 +13,15 @@
         @extend p;
         margin-left: 0.8rem;
     }
+
+    &-big{
+        img,svg{
+            height: 3rem;
+            width: 3rem;
+        }
+
+        span{
+            @extend .p-big;
+        }
+    }
 }
