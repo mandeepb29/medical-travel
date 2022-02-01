@@ -48,7 +48,8 @@ section {
 a, p, .icon-text span, button, code {
   font-size: 1.6rem;
   font-family: 'Work Sans', sans-serif;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-decoration: none !important; }
 
 span {
   font-family: inherit;
@@ -860,23 +861,31 @@ section {
   height: 2.5rem;
   width: 2.5rem; }
 
-.quote-top {
+.quote-top, .contact-top {
   top: 0px;
-  bottom: 0px;
   left: 0px;
   z-index: -30;
-  height: 68%;
   width: 100%;
   position: absolute;
   border-radius: 0px 0px 0px 120px;
   background-image: linear-gradient(to right, #FCF7F3, transparent); }
 
-.form-right {
+.quote-top {
+  height: 72%; }
+
+.card-green {
   padding: 2rem;
   background: #EBFAEE;
   border: 1px solid #A1E8AF;
   box-sizing: border-box;
   border-radius: 6px; }
+
+.contact-top {
+  height: 60%; }
+
+.contact-icon {
+  width: 4.5rem;
+  height: 4.5rem; }
 
 .clinic-free-quote-btn {
   margin-top: 6rem;
