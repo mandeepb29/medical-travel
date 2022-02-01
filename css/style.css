@@ -821,6 +821,13 @@ section {
   border-radius: 0px 0px 0px 120px;
   background-image: linear-gradient(to right, #FCF7F3, transparent); }
 
+.form-right {
+  padding: 2rem;
+  background: #EBFAEE;
+  border: 1px solid #A1E8AF;
+  box-sizing: border-box;
+  border-radius: 6px; }
+
 .clinic-free-quote-btn {
   margin-top: 6rem;
   padding-bottom: 1rem;

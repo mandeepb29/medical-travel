@@ -9,3 +9,11 @@
         border-radius: 0px 0px 0px 120px;
         background-image: linear-gradient(to right, $color-cream, transparent);
 }
+
+.form-right {
+        padding: 2rem;
+        background: $brand-green-light;
+        border: 1px solid #A1E8AF;
+        box-sizing: border-box;
+        border-radius: 6px;
+}
