@@ -174,6 +174,20 @@ p, .icon-text span {
     margin-bottom: 0;
     color: #14080E; }
 
+.badge {
+  padding: 0.8rem 1.4rem;
+  background-color: #D1C9EE;
+  color: #473198;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10rem; }
+  .badge:not(:last-child) {
+    margin-right: 1.2rem; }
+  .badge-container {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem; }
+
 .btn {
   font-size: 1.6rem;
   padding: 1rem 1.6rem;
@@ -261,7 +275,30 @@ p, .icon-text span {
     width: 2.4rem;
     height: 2.4rem; }
 
-.card, .result-card, .treatment-card-image, .review-card {
+.top-head {
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  border-radius: 80px 0px 0px 80px;
+  background-color: #FCF7F3; }
+
+.blog-image {
+  width: 16rem !important;
+  height: 18rem !important;
+  margin-right: 2rem; }
+  .blog-image-1 {
+    border-radius: 6px 6px 0px 0px !important;
+    width: 35rem;
+    height: 25rem;
+    margin-bottom: 2rem; }
+
+.blog-card {
+  flex-direction: row; }
+
+.card, .blog-card, .result-card, .treatment-card-image, .review-card {
   padding: 2.4rem 3.6rem;
   border: 1px solid #EDEDED;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
@@ -393,20 +430,6 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
   .icon-text-big img, .icon-text-big svg {
     height: 3rem;
     width: 3rem; }
-
-.badge {
-  padding: 0.8rem 1.4rem;
-  background-color: #D1C9EE;
-  color: #473198;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border-radius: 10rem; }
-  .badge:not(:last-child) {
-    margin-right: 1.2rem; }
-  .badge-container {
-    display: flex;
-    align-items: center;
-    margin-top: 4rem; }
 
 .treatment-card {
   display: flex;

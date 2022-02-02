@@ -1,0 +1,30 @@
+.top-head {
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    border-radius: 80px 0px 0px 80px;
+    background-color: $color-cream;
+}
+
+.blog-image {
+    width: 16rem !important;
+    height: 18rem !important;
+    margin-right: 2rem;
+
+    &-1{
+        border-radius: 6px 6px 0px 0px !important;
+        width: 35rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.blog-card{
+    @extend .card;
+    flex-direction: row;
+
+}
