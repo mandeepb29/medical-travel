@@ -5,9 +5,17 @@
         &-left{
             padding-right: 2rem;
             border-right: 1px solid $border-grey;
+
+            @include res(sm){
+                border:none;
+            }
+
         }
         &-right{
             padding-left: 2rem;
+            @include res(sm){
+                padding-left: 0;
+            }
         }
     }
 }

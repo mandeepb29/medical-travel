@@ -1,5 +1,5 @@
 
-label,.form-label,select, .form-select{
+label,.form-label,select, .form-select,input, .form-input{
     transition: $transition-primary;
 } 
 
@@ -32,6 +32,10 @@ select, .form-select, input, .form-input{
     }
 }
 
+select, .form-select{
+    padding-right: 2.5rem;
+}
+
 
 select, .form-select, input, .form-input{
     &:focus,&:active{
@@ -59,4 +63,8 @@ select, .form-select, input, .form-input{
 .btn-check:active+.btn-check-label, .btn-check:checked+.btn-check-label{
     color: $color-white;
     background-color: $brand-purple;
+}
+
+.form-section{
+    margin-bottom: 3rem;
 }

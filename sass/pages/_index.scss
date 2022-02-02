@@ -166,6 +166,20 @@
 
 .cta-section{
     padding-bottom: 6rem;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+
+
+        svg,img{
+            margin-left: 0.8rem;
+        }
+    }
 }
 
 .bottom-left {
