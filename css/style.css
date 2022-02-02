@@ -277,23 +277,28 @@ p, .icon-text span {
 
 .top-head {
   top: 0px;
-  left: 0px;
   z-index: -10;
-  height: 30%;
+  height: 18rem;
   width: 100%;
   position: absolute;
   border-radius: 80px 0px 0px 80px;
   background-color: #FCF7F3; }
 
 .blog-image {
-  width: 16rem !important;
-  height: 18rem !important;
-  margin-right: 2rem; }
+  width: 16.5rem !important;
+  height: 18.5rem !important;
+  margin-right: 2rem;
+  border-radius: 10px 0px 0px 10px !important; }
   .blog-image-1 {
     border-radius: 10px 10px 0px 0px !important;
     width: 35rem;
     height: 25rem;
     margin-bottom: 2rem; }
+  .blog-image-2 {
+    width: 20rem !important;
+    height: 15rem !important;
+    margin-right: 2rem;
+    border-radius: 10px 0px 0px 10px !important; }
 
 .blog-card {
   flex-direction: row; }
@@ -901,7 +906,7 @@ section {
   background-image: linear-gradient(to right, #FCF7F3, transparent); }
 
 .quote-top {
-  height: 72%; }
+  height: 45rem; }
 
 .card-green {
   padding: 2rem;
@@ -911,7 +916,7 @@ section {
   border-radius: 6px; }
 
 .contact-top {
-  height: 60%; }
+  height: 41rem; }
 
 .contact-icon {
   width: 4.5rem;
