@@ -100,12 +100,12 @@
               <div class="col-md-6 mt-4">
                 <label for="nameInput" class="form-label">Name*</label>
               <input type="text" class="form-input"
-            placeholder="Enter your name" aria-label="First Name" id="nameInput">
+            placeholder="Enter your name" aria-label="First Name" id="nameInput" name="name" required>
           </div>
 
         <div class="col-md-6 mt-4">
               <label for="emailInput" class="form-label">Email*</label>
-          <input type="email" class="form-input" placeholder="Enter your email" aria-label="Email" id="emailInput">
+          <input type="email" class="form-input" placeholder="Enter your email" aria-label="Email" id="emailInput" name="email" required>
       </div>
    
         <div class="col-xl-6 col-lg-8 pt-3">
@@ -113,7 +113,7 @@
           <div class="row">
           
             <div class="col-4">
-              <select class="form-select" id="phoneInput">
+              <select class="form-select" id="phoneInput" name="phone_code">
                 <option value="">Code</option>
                 <option data-countryCode="DZ" value="213">Algeria (+213)</option>
 		<option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -333,7 +333,7 @@
             </div>
             <div class="col-8">
               <input type="number" class="form-input" 
-              placeholder="Enter your phone number" aria-label="Enter your phone number">
+              placeholder="Enter your phone number" aria-label="Enter your phone number" name="phone_number">
             </div>
           </div>
         </div>
@@ -342,12 +342,12 @@
           <label for="commentsInput">Comments*</label>
             <textarea class="form-input" 
             rows="4"
-            placeholder="Other destination and treatment" id="commentsInput"></textarea>
+            placeholder="Other destination and treatment" id="commentsInput" name="comments" required></textarea>
         </div>
       
             <div class="col-12 mt-5 pb-3">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-primary" type="button">Submit</button>
+              <button class="btn btn-primary" type="submit">Submit</button>
             </div>
           </div>
         </div>
