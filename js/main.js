@@ -325,3 +325,9 @@ const inlineGallery2 = lightGallery(lgContainer2, {
 
 inlineGallery1.openGallery();
 inlineGallery2.openGallery();
+
+
+//owl carousel in blog
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
