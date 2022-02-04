@@ -191,12 +191,23 @@
 .bottom-right {
     top: -0.1rem;
     right: -0.5em;
-   
 }
 
 .text-bottom {
-   
     text-align: center;
     letter-spacing: -0.04em;
     color: $color-white;
+}
+
+.search-box-1 {
+    display: none;
+    position: absolute;
+    margin-top: 13rem;
+    width: 86.7%;
+}
+
+.fa {
+    font-size: 2.5rem !important;
+    width: 1rem !important;
+    margin-left: 1.5rem !important;
 }

@@ -907,6 +907,17 @@ section {
   letter-spacing: -0.04em;
   color: #ffffff; }
 
+.search-box-1 {
+  display: none;
+  position: absolute;
+  margin-top: 13rem;
+  width: 86.7%; }
+
+.fa {
+  font-size: 2.5rem !important;
+  width: 1rem !important;
+  margin-left: 1.5rem !important; }
+
 .blog-bg {
   top: -10px;
   left: 0px;
