@@ -1,75 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyTripMed - Contact</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-xl navbar-light">
-    <div class="container align-items-center">
-     
-      <a class="navbar-brand-1 text-decoration-none nav-left" href="./index.html">
-        <img src="./img/logo-color.png">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--seo tags start-->
+    <meta content="MyTripMed" name="author" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MyTripMed - The Best Place for Medical Tourism" />
+    <meta
+      content="keywords"
+      name="MyTripMed, beauty, medical travel, surgery, cosmetic surgery"
+    />
+    <meta content="MyTripMed.com" name="image" />
+    <meta content="800" name="image:width" />
+    <meta content="400" name="image:height" />
+    <title>MyTripMed - Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+       <!-- Favicon Icon -->
+       <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container align-items-center">
+  
+        <div class="navbar-logo-box">
+          <a class="navbar-brand-1 text-decoration-none nav-left" href="./index.html">
+            <img src="./img/logo-color.png">
           </a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#navbarCollapsablePart" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarCollapsablePart">
-            <ul class="navbar-nav align-items-xl-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Destinations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Treatments</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./blog.html">Blogs</a>
-              </li>
-              <li class="nav-item">
-
-                <a type="button" href="./free-quote.html" class="btn btn-outline btn-sm text-600 font-karla">Request Free Quote</a>
-              </li>
-            </ul>
-
-            <div class="nav-right">
-              <div class="d-flex align-items-center justify-content-between justify-content-xl-end">
-                <div class="d-flex align-items-center">
-                  <i class="header-icon" data-feather="globe"></i>
-                  <p class="language">language</p>
-                  <select class="form-select-1">
-                    <option selected>en</option>
-                    <option value="1">es</option>
-                    <option value="2">fr</option>
-                  </select>
-                </div>
-
-                <div class="d-flex align-items-center">
-                  <i class="header-icon" data-feather="dollar-sign"></i>
-                  <p class="currency">currency</p>
-                  <select class="form-select-2">
-                    <option selected>dollar</option>
-                    <option value="1">euro</option>
-                    <option value="2">pound</option>
-                  </select>
-                </div>
-                
+         <img src="./img/search.svg" class="search-toggle" id="search-open" alt="open search" onclick="openSearch()">
+          <img src="./img/x.svg" class="search-toggle" id="search-close" alt="close search" onclick="closeSearch()">
+          <div class="search-box-1 pt-3">
+            <form onsubmit="triggerSearch()">
+            <input type="text" placeholder="Search by clinic, treatment or a location" id="search-header"
+              name="search_header">
+            </form>
+          </div>
+        </div>
+  
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsablePart"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse " id="navbarCollapsablePart">
+          <ul class="navbar-nav align-items-xl-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./results.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./results.html">Treatments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./add-clinic.html">Add Clinic</a>
+            </li>
+            <li class="nav-item">
+  
+              <a type="button" href="./free-quote.html" class="btn btn-outline btn-sm text-600 font-karla">Request Free
+                Quote</a>
+            </li>
+          </ul>
+  
+          <div class="nav-right">
+            <div class="d-flex align-items-center justify-content-between justify-content-xl-end">
+              <div class="d-flex align-items-center">
+                <i class="header-icon" data-feather="globe"></i>
+                <p class="language">language</p>
+                <select class="form-select-1">
+                  <option selected>en</option>
+                  <option value="1">es</option>
+                  <option value="2">fr</option>
+                </select>
               </div>
-              <a class="navbar-contact" href="tel:1-800-550-00-89">
-                <h4 class="mt-1 text-dark mb-0">1-800-550-00-89</h4>
-                <span class="p-xs text-grey">contact us</span>
-              </a>
-    </div>
-  </div>
-</div>
-</nav>
+  
+              <div class="d-flex align-items-center">
+                <i class="header-icon" data-feather="dollar-sign"></i>
+                <p class="currency">currency</p>
+                <select class="form-select-2">
+                  <option selected>dollar</option>
+                  <option value="1">euro</option>
+                  <option value="2">pound</option>
+                </select>
+              </div>
+  
+            </div>
+            <a class="navbar-contact" href="tel:1-800-550-00-89">
+              <h4 class="mt-1 text-dark mb-0">1-800-550-00-89</h4>
+              <span class="p-xs text-grey">contact us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </nav>
 
   <section class="top-section pb-0">
     <div class="container heading-border">
@@ -265,68 +298,70 @@ placeholder="Enter your Zipcode" aria-label="Zipcode" id="Zipcode" name="zipcode
         <div class="row">
           <div class="col-lg-3 col-md-12">
             <div class="footer-logo-wrapper">
-          <div class="footer-logo">
-        <img src="./img/logo-white.png" alt="logo">
-      </div>
-
-          <p class="mt-4 text-purple-light">
-          of classical Latin literature from 45 BC, making it over 2000 years old. 
-          Richard McClintock, a Latin professor at</p>
-
-            <a href="./free-quote.html" class="btn btn-white btn-icon-text mt-5 mb-3">
+              <div class="footer-logo">
+                <img src="./img/logo-white.png" alt="logo">
+              </div>
+  
+              <p class="mt-4 text-purple-light">
+                of classical Latin literature from 45 BC, making it over 2000 years old.
+                Richard McClintock, a Latin professor at</p>
+  
+              <a href="./free-quote.html" class="btn btn-white btn-icon-text mt-5 mb-3">
                 Request a Quote
-              <i data-feather="message-square"></i>
-            </a>
+                <i data-feather="message-square"></i>
+              </a>
   
-            <div class="social-icons-wrapper">
+              <div class="social-icons-wrapper">
   
-            <h5 class="subheading text-white">find us on</h5>
-              <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i data-feather="twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i data-feather="linkedin"></i></a>
+                <h5 class="subheading text-white">find us on</h5>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
+                  <a href="https://www.twitter.com" target="_blank"><i data-feather="twitter"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank"><i data-feather="linkedin"></i></a>
+                </div>
               </div>
             </div>
-        </div>
-
-      </div>
-        <div class="col-lg-3 col-md-4 col-sm-4">
-            <div class="footer-menu">
-              <h5 class="footer-menu-heading">
-                MENU
-          </h5>
-
-            <div class="footer-menu-list">
-            <a href="#" class="footer-menu-link">Treatments</a>
-            <a href="#" class="footer-menu-link">Destinations</a>
-            <a href="#" class="footer-menu-link">Diseases</a>
-            <a href="#" class="footer-menu-link">Doctors</a>
-            <a href="./blog.html" class="footer-menu-link">Blog</a>
-            </div>
-            </div>
-            </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4">
-          <div class="footer-menu">
-            <h5 class="footer-menu-heading">
-              ABOUT COMPANY 
-            </h5>
-            <div class="footer-menu-list">
-              <a href="#" class="footer-menu-link">About Us</a>
-              <a href="#" class="footer-menu-link">Careers</a>
-              <a href="#" class="footer-menu-link">Reviews</a>
-              <a href="#" class="footer-menu-link">Policy</a>
-              <a href="#" class="footer-menu-link">Terms and Conditions</a>
-            </div>
-          </div>
   
           </div>
-
           <div class="col-lg-3 col-md-4 col-sm-4">
             <div class="footer-menu">
               <h5 class="footer-menu-heading">
-                CONTACT US  
+                MENU
+              </h5>
+  
+              <div class="footer-menu-list">
+                <a href="#" class="footer-menu-link">Treatments</a>
+                <a href="#" class="footer-menu-link">Destinations</a>
+                <a href="#" class="footer-menu-link">Diseases</a>
+                <a href="#" class="footer-menu-link">Doctors</a>
+                <a href="./blog.html" class="footer-menu-link">Blog</a>
+                <a href="./contact.html" class="footer-menu-link">Contact</a>
+                <a href="./add-clinic.html" class="footer-menu-link">Add Clinic</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="footer-menu">
+              <h5 class="footer-menu-heading">
+                ABOUT COMPANY
+              </h5>
+              <div class="footer-menu-list">
+                <a href="#" class="footer-menu-link">About Us</a>
+                <a href="#" class="footer-menu-link">Careers</a>
+                <a href="#" class="footer-menu-link">Reviews</a>
+                <a href="#" class="footer-menu-link">Policy</a>
+                <a href="#" class="footer-menu-link">Terms and Conditions</a>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="footer-menu">
+              <h5 class="footer-menu-heading">
+                CONTACT US
               </h5>
               <div class="footer-menu-list">
                 <h5 class="text-400 text-purple-light">
@@ -350,7 +385,7 @@ placeholder="Enter your Zipcode" aria-label="Zipcode" id="Zipcode" name="zipcode
                   <span class="text-600 text-white">4566-4568-7566</span>
                 </a>
               </div>
-
+  
               <div class="footer-menu-list mt-5">
                 <h5 class="text-400 text-purple-light">
                   Email
@@ -362,20 +397,20 @@ placeholder="Enter your Zipcode" aria-label="Zipcode" id="Zipcode" name="zipcode
                 </a>
               </div>
             </div>
-            </div>
-    </div>
-
-    <hr class="bg-white mb-4">
-
-    <p class="text-center text-purple-light">
-      © Copyright MyTripMed 2022
-    </p>
-
-  </div>
-</footer>
+          </div>
+        </div>
+  
+        <hr class="bg-white mb-4">
+  
+        <p class="text-center text-purple-light">
+          © Copyright MyTripMed 2022
+        </p>
+  
+      </div>
+    </footer>
 </body>
-<script src="https://unpkg.com/feather-icons"></script>
-<script>feather.replace();</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="./js/main.js"></script>
 </html>

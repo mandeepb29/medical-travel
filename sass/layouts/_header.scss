@@ -65,15 +65,25 @@ width: 100%;
     align-items: flex-start;
     width: 22rem; 
     max-width:45vw ; 
+
+    @include res(lg){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .search-toggle{
     color: $text-grey;
-    margin-left: 4rem;
+    margin-left: 3rem;
     stroke-width: 2px;
     height: 3rem;
     width: 3rem;
     cursor: pointer;
+
+    @include res(lg){
+        margin-left: 0;
+    }
     
 }
 
@@ -117,7 +127,7 @@ width: 100%;
 //     text-align: center;
 // }
 .nav-item{
-    margin: 0 1rem;
+    margin: 0 0.7rem;
 
     @include res(lg){
         margin:0 0 1.5rem;
@@ -128,6 +138,7 @@ width: 100%;
     font-family: Karla, sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
+    letter-spacing: -0.03rem;
     color: $brand-dark !important;
 
     &:hover {

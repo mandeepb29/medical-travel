@@ -7,6 +7,10 @@
     padding: 1rem 4rem;
     font-size: 1.8rem;
 
+    @include res(sm){
+        font-size: 2rem;
+    }
+
     transition: $transition-primary;
     transition-duration: 100ms;
     &:hover{
@@ -14,14 +18,14 @@
     }
     &:active{
         transform: translateY(0);
+        box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2) !important;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.25rem rgba(114, 49, 253, 0.217);
     }
     &-primary,&-secondary{
         color: $color-white;
         border: none;
-
-        &:active{
-            transform: translateY(0);
-        }
     }
     &-primary{
         background-color: $brand-purple;
@@ -34,11 +38,9 @@
         }
         &:active{
             background-color: darken($brand-purple,15%);
-            box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2) !important;
         }
          &:focus{
             background-color: $brand-purple;
-            box-shadow: 0 0 0 0.25rem rgba(114, 49, 253, 0.217);
         }
     }
     &-secondary{
@@ -136,5 +138,24 @@
             width: 2.4rem;
             height: 2.4rem;
         }
+    }
+}
+
+.input-btn{
+    font-size: 1.6rem;
+    border: 1.4px solid $light-grey;
+    background-color: transparent;
+    padding: 1.2rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg{
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    @include res(sm){
+        font-size: 1.8rem;
     }
 }
