@@ -72,6 +72,12 @@ h2, .h2 {
   letter-spacing: -0.15rem;
   margin-bottom: 1.8rem; }
 
+h3, .h3 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.14rem;
+  margin-bottom: 1.8rem; }
+
 h4 {
   font-size: 2.4rem;
   letter-spacing: -0.12rem; }
@@ -292,33 +298,48 @@ p, .icon-text span {
     width: 2.4rem;
     height: 2.4rem; }
 
+.blog-card {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  padding: 0 !important;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+  .blog-card-vertical {
+    display: flex;
+    flex-direction: column; }
+    .blog-card-vertical img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      object-position: center top; }
+  .blog-card-long .blog-content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column; }
+
+.blog-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top; }
+
+.blog-content {
+  padding: 2rem; }
+  .blog-content h5 {
+    color: #14080E; }
+
+.blog-header {
+  margin-bottom: 6rem; }
+
 .top-head {
   top: 0px;
   z-index: -10;
-  height: 18rem;
+  height: 20rem;
   width: 100%;
   position: absolute;
   border-radius: 80px 0px 0px 80px;
   background-color: #FCF7F3; }
-
-.blog-image {
-  width: 82.8rem !important;
-  height: 60.8rem !important;
-  margin-left: 7.5rem;
-  border-radius: 10px 0px 0px 10px !important; }
-  .blog-image-1 {
-    border-radius: 10px 10px 0px 0px !important;
-    width: 35rem;
-    height: 25rem;
-    margin-bottom: 2rem; }
-  .blog-image-2 {
-    width: 20rem !important;
-    height: 15rem !important;
-    margin-right: 2rem;
-    border-radius: 10px 0px 0px 10px !important; }
-
-.blog-card {
-  flex-direction: row; }
 
 .card, .blog-card, .result-card, .treatment-card-image, .review-card {
   padding: 2.4rem 3.6rem;
@@ -328,7 +349,7 @@ p, .icon-text span {
   background-color: #ffffff; }
   .card-shadow-xl {
     box-shadow: 0px 18px 30px 2px rgba(0, 0, 0, 0.08); }
-  .card-sm, .result-card, .review-card {
+  .card-sm, .blog-card, .result-card, .review-card {
     padding: 2rem 2.4rem; }
 
 label, .form-label, select, .form-select, input, .form-input {
