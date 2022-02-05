@@ -15,6 +15,14 @@
     &:active{
         transform: translateY(0);
     }
+    &-primary,&-secondary{
+        color: $color-white;
+        border: none;
+
+        &:active{
+            transform: translateY(0);
+        }
+    }
     &-primary{
         background-color: $brand-purple;
         color: $color-white;
@@ -25,13 +33,27 @@
             background-color: darken($brand-purple,10%);
         }
         &:active{
-            transform: translateY(0);
             background-color: darken($brand-purple,15%);
             box-shadow: 0px 4px 4px 0px hsla(253, 51%, 39%, 0.2) !important;
         }
          &:focus{
             background-color: $brand-purple;
             box-shadow: 0 0 0 0.25rem rgba(114, 49, 253, 0.217);
+        }
+    }
+    &-secondary{
+        background-color: $brand-pink;
+        box-shadow: 0px 4px 4px 0px hsla(288, 51%, 39%, 0.2);
+        &:hover{
+            background-color: darken($brand-pink,10%);
+        }
+        &:active{
+            background-color: darken($brand-pink,15%);
+            box-shadow: 0px 4px 4px 0px hsla(290, 51%, 39%, 0.2) !important;
+        }
+         &:focus{
+            background-color: $brand-pink;
+            box-shadow: 0 0 0 0.25rem rgba(195, 49, 253, 0.217);
         }
     }
     &-outline{
