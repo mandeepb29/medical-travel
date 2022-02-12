@@ -202,6 +202,9 @@ h6, .h6 {
     margin-bottom: 0;
     color: #14080E; }
 
+.owl-carousel .owl-stage {
+  padding-left: 0 !important; }
+
 .badge {
   padding: 0.8rem 1.4rem;
   background-color: #D1C9EE;
@@ -315,7 +318,8 @@ h6, .h6 {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
-    border: 1px solid #EDEDED; }
+    border: 1px solid #EDEDED;
+    background-color: #ffffff; }
     .btn-icon img, .btn-icon svg {
       width: 2.4rem;
       height: 2.4rem; }
@@ -343,6 +347,22 @@ h6, .h6 {
   @media (max-width: 47.99em) {
     .input-btn {
       font-size: 1.8rem; } }
+
+.owl-carousel .btn-icon {
+  position: absolute;
+  top: 40%; }
+  .owl-carousel .btn-icon.prev {
+    left: 0;
+    transform: translateX(-40%); }
+    @media (max-width: 47.99em) {
+      .owl-carousel .btn-icon.prev {
+        transform: translateX(0%); } }
+  .owl-carousel .btn-icon.next {
+    right: 0;
+    transform: translateX(40%); }
+    @media (max-width: 47.99em) {
+      .owl-carousel .btn-icon.next {
+        transform: translateX(0%); } }
 
 .blog-card {
   display: grid;
@@ -1210,3 +1230,50 @@ section {
     color: #D6D6D6; }
   .lightGallery-captions h4, .lightGallery-captions p, .lightGallery-captions .icon-text span, .icon-text .lightGallery-captions span {
     text-align: center; }
+
+.gallery-2 {
+  background-color: #000;
+  padding: 2rem 3rem;
+  overflow: hidden;
+  height: 41.7rem;
+  position: relative; }
+  @media (max-width: 61.99em) {
+    .gallery-2 {
+      height: 38rem; } }
+  @media (max-width: 47.99em) {
+    .gallery-2 {
+      height: 36rem; } }
+
+.before-after-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr; }
+
+.before-img img, .after-img img {
+  height: 37.5rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
+  @media (max-width: 61.99em) {
+    .before-img img, .after-img img {
+      height: 34rem; } }
+  @media (max-width: 47.99em) {
+    .before-img img, .after-img img {
+      height: 32rem; } }
+
+.before-img::before, .after-img::before {
+  position: absolute;
+  bottom: 1rem;
+  background-color: rgba(20, 8, 14, 0.4);
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 1.4rem; }
+
+.before-img::before {
+  content: "Before";
+  left: 1rem; }
+
+.after-img::before {
+  content: "After";
+  right: 1rem; }

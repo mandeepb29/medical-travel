@@ -111,4 +111,77 @@
           text-align: center;
       }
   }
-  
+  .gallery-2{
+    background-color: #000;
+    padding: 2rem 3rem;
+    overflow: hidden;
+    height: 41.7rem;
+    position: relative;
+
+    @include res(md){
+        height: 38rem;
+    }
+
+    @include res(sm){
+        height: 36rem;
+    }
+
+  }
+  .before-after-container{
+     display: grid;
+     gap: 1rem;
+     grid-template-columns: 1fr 1fr;
+  }
+
+  .before-img, .after-img{
+    img{
+        height: 37.5rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        @include res(md){
+            height: 34rem;
+        }
+
+        @include res(sm){
+            height: 32rem;
+        }
+    }
+
+    &::before{
+        position: absolute;
+        bottom:1rem;
+        background-color: rgba($brand-dark, 0.4);
+        color: #fff;
+        border-radius: 4px;
+        padding: 6px;
+        font-size: 1.4rem;
+    }
+  }
+
+  .before-img{
+      &::before{
+          content: "Before";
+          left: 1rem;
+      }
+  }
+
+  .after-img{
+    &::before{
+        content: "After";
+        right: 1rem;
+    }
+}
+
+// .before-after-container {
+//     .lg-prev, .lg-next{
+//         opacity: 1 !important;
+//     }
+//     .lg-prev{
+//         left: 0 !important;
+//     }
+//     .lg-next{
+//         right: 0 !important;
+//     }
+// }

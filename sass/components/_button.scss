@@ -119,6 +119,7 @@
        @include flex-center;
         box-shadow: $shadow-sm;
         border: 1px solid $border-grey;
+        background-color: $color-white;
         img,svg{
             width: 2.4rem;
             height: 2.4rem;
@@ -157,5 +158,27 @@
 
     @include res(sm){
         font-size: 1.8rem;
+    }
+}
+
+.owl-carousel{
+    .btn-icon{
+        position: absolute;
+        top: 40%;
+        &.prev{
+            left: 0;
+            transform: translateX(-40%);
+
+            @include res(sm){
+                transform: translateX(0%);
+            }
+        }
+        &.next{
+            right: 0;
+            transform: translateX(40%);
+            @include res(sm){
+                transform: translateX(0%);
+            }
+        }
     }
 }

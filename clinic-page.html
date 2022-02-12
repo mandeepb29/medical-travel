@@ -22,9 +22,10 @@
     <title>MyTripMed - Clinic Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-zoom.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-thumbnail.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-autoplay.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-zoom.min.css">
+    <link rel="stylesheet" href="./vendors/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendors/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
    
     <!-- Favicon Icon -->
@@ -214,8 +215,43 @@
         </h5>
 
         <div class="gallery-2">
-          <div id="inline-gallery-beforeafter" class="inline-gallery-container"></div>
+          <!-- <div id="inline-gallery-beforeafter" class="inline-gallery-container"></div> -->
+          
+          <div class="owl-carousel" id="owl-carousel-image">
+            <div class="item">
+              <div class="before-after-container">
+                <div class="before-img">
+                  <img src="https://images.pexels.com/photos/10824949/pexels-photo-10824949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="before img">
+                </div>
+                <div class="after-img">
+                  <img src="https://images.pexels.com/photos/6629695/pexels-photo-6629695.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="after img">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="before-after-container">
+                <div class="before-img">
+                  <img src="https://images.pexels.com/photos/9720505/pexels-photo-9720505.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="before img">
+                </div>
+                <div class="after-img">
+                  <img src="https://images.pexels.com/photos/8504775/pexels-photo-8504775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="after img">
+                </div>
+              </div>
+              </div>
+              <div class="item">
+                <div class="before-after-container">
+                  <div class="before-img">
+                    <img src="https://images.pexels.com/photos/3877434/pexels-photo-3877434.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="before img">
+                  </div>
+                  <div class="after-img">
+                    <img src="https://images.pexels.com/photos/3283907/pexels-photo-3283907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="after img">
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
+
+        
       </div>
 
       </div>
@@ -700,12 +736,13 @@ If you are a past patient of BioFertility Center please click the 'write review'
   </footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/feather-icons"></script>
+<script src="./vendors/owl-carousel/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js" integrity="sha512-76iVPLEHY5kfZFCmHBQHLkcE4I2r+gK/I/HLYcm3iCuRO/hopAtyO3AFPCZy5B4347wQ7NftStUBVk/cR21MSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-zoom.min.css" integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-U/q9/jQoBhMYdo/0oa7Dlb7gntvk0+ASatl5Yxu7gcUUoKs+L8+xROxmrCzgIdGFKS/nB2RiXOxzNfDy18xwXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-U/q9/jQoBhMYdo/0oa7Dlb7gntvk0+ASatl5Yxu7gcUUoKs+L8+xROxmrCzgIdGFKS/nB2RiXOxzNfDy18xwXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/autoplay/lg-autoplay.min.js" integrity="sha512-SF3rg51HmmpWMxmo/CE+926rTTxVInz6h8rCm0UqKhz+SzPb4DTT4I5IY5docFh60CYehPBOH1F6FtfoEgTHmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/zoom/lg-zoom.min.js" integrity="sha512-CFy+xT+nDI3oEsnu6zLgBYr1ECW3cfnaFw6k3zkc1qpOG71BvulPWMrPNksGgIQq8WaMZIotttJkmSmNJdC4eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 <script src="https://unpkg.com/feather-icons"></script>
