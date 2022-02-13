@@ -120,7 +120,7 @@
             <div class="col-lg-10">
                 <div class="form-left card card-sm">
                     <form>
-                        <div class="form-section">
+                        <!-- <div class="form-section">
                             <h5 class="text-dark mb-2">Contact Details</h5>
                             <div class="row">
                                 <div class="col-md-4 mt-4">
@@ -134,7 +134,7 @@
                                 <div class="col-md-8 mt-4">
                                   <label for="nameInput" class="form-label">Name*</label>
                                 <input type="text" class="form-input"
-                              placeholder="Enter your name" aria-label="First Name" id="nameInput" name="name" required> 
+                              placeholder="Enter your name" id="nameInput" name="name" required> 
                             </div>
                            
                        
@@ -198,28 +198,34 @@
                             </div>
                           </div>
                           </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-section">
                             <h5 class="text-dark mb-2">Clinic Details</h5>
                             <div class="row">
 
-                                <div class="col-md-12 mt-4">
+                              <div class="col-md-3 mt-4">
+                                <label for="clinicCode" class="form-label">Clinic Code*</label>
+                                <input type="text" class="form-input" placeholder="Enter Clinic Code"
+                                    aria-label="Clinic Code" id="clinicCode" name="clinic_code" required>
+                            </div>
+
+                                <div class="col-md-9 mt-4">
                                     <label for="clinicInput" class="form-label">Clinic Name*</label>
                                     <input type="text" class="form-input" placeholder="Enter Clinic Name"
-                                        aria-label="First Name" id="clinicInput" name="clinic_name" required>
+                                       id="clinicInput" name="clinic_name" required>
                                 </div>
 
                                 <div class="col-md-12 mt-4">
                                     <label for="address11" class="form-label">Address 1*</label>
                                     <input type="text" class="form-input" placeholder="Enter your clinic primary address"
-                                        aria-label="First Name" id="address11" name="clinic_address1" required>
+                                       id="address11" name="clinic_address1" required>
                                 </div>
 
                                 <div class="col-md-12 mt-4">
                                     <label for="address21" class="form-label">Address 2</label>
                                     <input type="text" class="form-input" placeholder="Enter your clinic secondary address"
-                                        aria-label="First Name" id="address21" name="clinic_address2">
+                                       id="address21" name="clinic_address2">
                                 </div>
 
                                 <div class="col-md-3 mt-4">
@@ -283,9 +289,16 @@
                                         id="year" name="clinic_est_year" required>
                                 </div>
 
+                                <div class="col-12 mt-4">
+                                  <label for="comments">Comment Box*</label>
+                                    <textarea class="form-input" 
+                                    rows="4"
+                                    placeholder="Enter your questions/comments" id="comments" required name="clinic_comments"></textarea>
+                                </div>
 
 
-                                <div class="col-md-12 mt-4">
+
+                                <!-- <div class="col-md-12 mt-4">
                                     <label for="certificationInput" class="form-label">What international accreditation
                                         does your medical clinic qualify for?
                                         *</label>
@@ -317,7 +330,7 @@
                                         <option value="Vietnam PhD Certificate">Vietnam PhD Certificate</option>
 
                                     </select>
-                                </div>
+                                </div> -->
 
                                 <div class="col-12 mt-5">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
