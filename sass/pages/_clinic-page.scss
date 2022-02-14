@@ -40,7 +40,9 @@
     &-img{
         border-radius:2.4rem;
         box-shadow: $shadow-xl;
-
+        max-height: 50rem;
+        object-fit: cover;
+        object-position: center;
         @include res(md){
             margin-top: 3rem;
         }
@@ -76,6 +78,10 @@
     }
 }
 
+.certificate-box{
+    padding: 2rem 1rem 1rem;
+    border-bottom: 1px solid $light-grey;
+}
 .photo-container{
     margin: 2rem 0
 }
@@ -115,16 +121,16 @@
     background-color: #000;
     padding: 2rem 3rem;
     overflow: hidden;
-    height: 41.7rem;
+    // height: 41.7rem;
     position: relative;
 
-    @include res(md){
-        height: 38rem;
-    }
+    // @include res(md){
+    //     height: 38rem;
+    // }
 
-    @include res(sm){
-        height: 36rem;
-    }
+    // @include res(sm){
+    //     height: 36rem;
+    // }
 
   }
   .before-after-container{
@@ -135,18 +141,17 @@
 
   .before-img, .after-img{
     img{
-        height: 37.5rem;
         width: 100%;
         object-fit: cover;
         object-position: center;
 
-        @include res(md){
-            height: 34rem;
-        }
+        // @include res(md){
+        //     height: 34rem;
+        // }
 
-        @include res(sm){
-            height: 32rem;
-        }
+        // @include res(sm){
+        //     height: 32rem;
+        // }
     }
 
     &::before{
