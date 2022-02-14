@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--seo tags start-->
+    <meta content="MyTripMed" name="author" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MyTripMed - The Best Place for Medical Tourism" />
+    <meta
+      content="keywords"
+      name="MyTripMed, beauty, medical travel, surgery, cosmetic surgery"
+    />
+    <meta content="MyTripMed.com" name="image" />
+    <meta content="800" name="image:width" />
+    <meta content="400" name="image:height" />
+    <title>MyTripMed - Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+       <!-- Favicon Icon -->
+       <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container align-items-center">
+  
+        <div class="navbar-logo-box">
+          <a class="navbar-brand-1 text-decoration-none nav-left" href="./index.html">
+            <img src="./img/logo-color.png">
+          </a>
+         <img src="./img/search.svg" class="search-toggle" id="search-open" alt="open search" onclick="openSearch()">
+          <img src="./img/x.svg" class="search-toggle" id="search-close" alt="close search" onclick="closeSearch()">
+          <div class="search-box-1 pt-3">
+            <form onsubmit="triggerSearch()">
+            <input type="text" placeholder="Search by clinic, treatment or a location" id="search-header"
+              name="search_header">
+            </form>
+          </div>
+        </div>
+  
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsablePart"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse " id="navbarCollapsablePart">
+          <ul class="navbar-nav align-items-xl-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./results.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./results.html">Treatments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./add-clinic.html">Add Clinic</a>
+            </li>
+            <li class="nav-item">
+  
+              <a type="button" href="./free-quote.html" class="btn btn-outline btn-sm text-600 font-karla">Request Free
+                Quote</a>
+            </li>
+          </ul>
+  
+          <div class="nav-right">
+            <div class="d-flex align-items-center justify-content-between justify-content-xl-end">
+              <div class="d-flex align-items-center">
+                <i class="header-icon" data-feather="globe"></i>
+                <p class="language">language</p>
+                <select class="form-select-1">
+                  <option selected>en</option>
+                  <option value="1">es</option>
+                  <option value="2">fr</option>
+                </select>
+              </div>
+  
+              <div class="d-flex align-items-center">
+                <i class="header-icon" data-feather="dollar-sign"></i>
+                <p class="currency">currency</p>
+                <select class="form-select-2">
+                  <option selected>dollar</option>
+                  <option value="1">euro</option>
+                  <option value="2">pound</option>
+                </select>
+              </div>
+  
+            </div>
+            <a class="navbar-contact" href="tel:1-800-550-00-89">
+              <h4 class="mt-1 text-dark mb-0">1-800-550-00-89</h4>
+              <span class="p-xs text-grey">contact us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </nav>
+
+  <section class="top-section pb-0">
+    <div class="container heading-border">
+            <h1 class="mb-3">Submit Review</h1>
+                <h5 class="text-dark">Submit the review for the {{clinic name}}</h5>
+              </div>
+    </section>
+
+    <div class="contact-top">
+    </div>
+
+  <div class="container mb-5 pb-5">   
+    <div class="row">
+      <div class="col-md-8 container-border">
+        <div class="form-left card card-sm">
+          <form>
+          <h4 class="text-dark mb-4">Fill this form to submit your review</h4>
+            <div class="row">
+             
+              <div class="col-md-12 mt-4">
+                <label for="nameInput" class="form-label">Name*</label>
+              <input type="text" class="form-input"
+            placeholder="Enter your name" aria-label="First Name" id="nameInput" name="name" required> 
+          </div>
+
+
+          <div class="col-md-6 mt-4">
+            <label for="email" class="form-label">Email*</label>
+        <input type="email" class="form-input" placeholder="Email" aria-label="Email" id="email" name="email" required>
+    </div>
+ 
+      <div class="col-xl-6 col-lg-8 mt-4">
+        <label for="code" class="form-label">Phone Number*</label>
+        <div class="row">
+        
+          <div class="col-4">
+            <select class="form-select" id="code" name="phone_code" required>
+      <option data-countryCode="IN" value="91">India (+91)</option>
+      <option data-countryCode="JP" value="81">Japan (+81)</option>
+  
+              </select>
+          </div>
+          <div class="col-8">
+            <input type="number" class="form-input" 
+            placeholder="Enter your phone number" aria-label="Enter your phone number" name="phone_number" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 mt-4">
+        <label for="reviewChoice" class="form-label">Review Choice*</label>
+      
+        <select class="form-select" id="reviewChoice" name="review_choice" required>
+          <option value="">I want to submit review for - </option>
+          <option value="Quality">Quality</option>
+          <option value="Service">Service</option>
+          <option value="Cleanliness">Cleanliness</option>
+          <option value="Comfort">Comfort</option>
+          <option value="Communication">Communication</option>
+       </select>
+      </div>
+
+
+<div class="col-md-12 mt-4">
+  <label for="rating" class="form-label">Rating*</label>
+<input type="number" class="form-input" step="0.1" min="0" max="5" placeholder="Please provide rating (from 1.0 to 5.0)" aria-label="Enter your rating" id="rating" name="rating" required>
+</div>
+
+        <div class="col-12 mt-4">
+          <label for="review">Review*</label>
+            <textarea class="form-input" 
+            rows="4"
+            placeholder="Please enter your review" id="review" name="review_text"></textarea>
+        </div>
+      
+            <div class="col-12 mt-5 pb-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>      
+    </div>
+        </div>
+      </div>
+    </div>
+       
+  <section class="cta-section bg-dark">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col text-center pt-1 pb-5">
+         <h2 class="text-bottom">Start now by finding a clinic or requesting a free quote</h2>
+            </div>
+            
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm-9">
+              <div class="row justify-content-between">
+                <div class="col-sm-4 col-6 d-flex">
+                  <a class="btn btn-primary btn-text-icon w-100" type="button" href="./results.html">Find a clinic
+                    <i data-feather="search"></i>
+                  </a>
+                  </div>
+            <div class="col-sm-4 col-6 d-flex">
+              <a class="btn btn-outline-purple btn-text-icon w-100" type="button" href="free-quote.html">Request a quote
+                  <i data-feather="message-square"></i>
+              </a>
+                </div>
+              </div>
+          </div>
+        </div>  
+
+          <div class="bottom-left">
+            <img src="./img/bottom-left.png">     
+          </div>
+
+          <div class="bottom-right">
+            <img src="./img/bottom-right.png"/>
+          </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-logo-wrapper">
+              <div class="footer-logo">
+                <img src="./img/logo-white.png" alt="logo">
+              </div>
+  
+              <p class="mt-4 text-purple-light">
+                of classical Latin literature from 45 BC, making it over 2000 years old.
+                Richard McClintock, a Latin professor at</p>
+  
+              <a href="./free-quote.html" class="btn btn-white btn-icon-text mt-5 mb-3">
+                Request a Quote
+                <i data-feather="message-square"></i>
+              </a>
+  
+              <div class="social-icons-wrapper">
+  
+                <h5 class="subheading text-white">find us on</h5>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
+                  <a href="https://www.twitter.com" target="_blank"><i data-feather="twitter"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank"><i data-feather="linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="footer-menu">
+              <h5 class="footer-menu-heading">
+                MENU
+              </h5>
+  
+              <div class="footer-menu-list">
+                <a href="#" class="footer-menu-link">Treatments</a>
+                <a href="#" class="footer-menu-link">Destinations</a>
+                <a href="#" class="footer-menu-link">Diseases</a>
+                <a href="#" class="footer-menu-link">Doctors</a>
+                <a href="./blog.html" class="footer-menu-link">Blog</a>
+                <a href="./contact.html" class="footer-menu-link">Contact</a>
+                <a href="./add-clinic.html" class="footer-menu-link">Add Clinic</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="footer-menu">
+              <h5 class="footer-menu-heading">
+                ABOUT COMPANY
+              </h5>
+              <div class="footer-menu-list">
+                <a href="#" class="footer-menu-link">About Us</a>
+                <a href="#" class="footer-menu-link">Careers</a>
+                <a href="#" class="footer-menu-link">Reviews</a>
+                <a href="#" class="footer-menu-link">Policy</a>
+                <a href="#" class="footer-menu-link">Terms and Conditions</a>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="footer-menu">
+              <h5 class="footer-menu-heading">
+                CONTACT US
+              </h5>
+              <div class="footer-menu-list">
+                <h5 class="text-400 text-purple-light">
+                  Phone
+                </h5>
+                <hr class="bg-white">
+                <a href="tel:00000000" class="footer-menu-link">
+                  <span class="text-300">Ukraine - </span>
+                  <span class="text-600 text-white">4566-4568-7566</span>
+                </a>
+                <a href="tel:00000000" class="footer-menu-link">
+                  <span class="text-300">Russia - </span>
+                  <span class="text-600 text-white">4566-4568-7566</span>
+                </a>
+                <a href="tel:00000000" class="footer-menu-link">
+                  <span class="text-300">Europe - </span>
+                  <span class="text-600 text-white">4566-4568-7566</span>
+                </a>
+                <a href="tel:00000000" class="footer-menu-link">
+                  <span class="text-300">USA - </span>
+                  <span class="text-600 text-white">4566-4568-7566</span>
+                </a>
+              </div>
+  
+              <div class="footer-menu-list mt-5">
+                <h5 class="text-400 text-purple-light">
+                  Email
+                </h5>
+                <hr class="bg-white">
+                <a href="mailto:contact@mytripmed.com" class="footer-menu-link">
+                  <span class="text-300">Mail ID - </span>
+                  <span class="text-600 text-white">contact@mytripmed.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <hr class="bg-white mb-4">
+  
+        <p class="text-center text-purple-light">
+          © Copyright MyTripMed 2022
+        </p>
+  
+      </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="./js/main.js"></script>
+</html>
