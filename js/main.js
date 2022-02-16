@@ -7,11 +7,14 @@ function openSearch() {
   $('#search-close').css('display', 'block');
 }
 
-function closeSearch() {
+function closeSearch($event) {
+  if($event.target.id != "search-header"){
   $(".search-box-1").css('display', 'none');
   $("#search-header").blur();
   $('#search-open').css('display', 'block');
   $('#search-close').css('display', 'none');
+  }
+  console.log("close search", $event.target.id);
 }
 
 function showFilters(){
@@ -24,7 +27,7 @@ function closeFilters(){
   $(".body-overlay").removeClass("show");
 }
 
-document.body.addEventListener('click', closeSearch, true);
+document.body.addEventListener('click',closeSearch, true);
 
 
 // //owl carousel in blog
