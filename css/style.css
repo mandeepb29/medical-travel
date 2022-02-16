@@ -556,7 +556,6 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       justify-content: space-between;
       height: 100%; }
       .result-card-body-content-top {
-        margin-bottom: 2rem;
         display: flex;
         justify-content: space-between; }
         .result-card-body-content-top-right {
@@ -1150,7 +1149,7 @@ section {
   height: 4.5rem; }
 
 .clinic-free-quote-btn {
-  margin-top: 6rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #EDEDED; }
 
@@ -1178,7 +1177,7 @@ section {
 .clinic-img {
   border-radius: 2.4rem;
   box-shadow: 0px 35px 50px 2px rgba(0, 0, 0, 0.12);
-  max-height: 50rem;
+  max-height: 35rem;
   object-fit: cover;
   object-position: center; }
   @media (max-width: 61.99em) {
@@ -1270,3 +1269,9 @@ section {
 .after-img::before {
   content: "After";
   right: 1rem; }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  filter: opacity(0.5);
+}
