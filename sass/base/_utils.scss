@@ -35,3 +35,10 @@
 .owl-carousel .owl-stage{
     padding-left: 0 !important;
 }
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.4;
+  }
+  
