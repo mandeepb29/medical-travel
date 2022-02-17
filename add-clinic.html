@@ -255,7 +255,7 @@
 
                                 <div class="col-md-12 mt-4">
                                     <label for="WebsiteInput" class="form-label">Website*</label>
-                                    <input type="text" class="form-input" placeholder="Enter your clinic's website url"
+                                    <input type="url" class="form-input" placeholder="Enter your clinic's website url (must start with https:// or http://)"
                                         aria-label="Website" id="WebsiteInput" name="clinic_website" required>
                                 </div>
 
@@ -277,7 +277,7 @@
                                                         </select>
                                         </div>
                                         <div class="col-8">
-                                            <input type="email" class="form-input" placeholder="Enter your phone number"
+                                            <input type="number" class="form-input" placeholder="Enter your phone number"
                                                 aria-label="Enter your clinic phone number" name="clinic_phone_number">
                                         </div>
                                     </div>
@@ -286,7 +286,7 @@
                                 <div class="col-xl-4 col-lg-6 mt-4">
                                     <label for="year" class="form-label">Year of Establishment*</label>
                                     <input type="number" class="form-input" placeholder="Enter your year of establishment of your clinic" aria-label="year"
-                                        id="year" name="clinic_est_year" required>
+                                        id="year" name="clinic_est_year" min="2022" required>
                                 </div>
 
                                 <div class="col-12 mt-4">
