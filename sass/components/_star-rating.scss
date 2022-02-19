@@ -21,3 +21,40 @@
     }
   }
  
+  .star-container{
+      display: inline-flex;
+      flex-direction: row-reverse;
+      margin:0.25rem 0 1rem;
+
+      
+input{
+  display: none;
+}
+
+label{
+  display: inline-block;
+  padding-right: 1rem;
+  font-size: 2rem;
+  color: #949B93;
+  cursor: pointer;
+
+
+
+  i{
+    font-size: 2rem;
+   
+  }
+  
+  &:hover, &:hover ~ &{
+    color:$brand-purple;
+  }
+}
+
+input:checked ~ label{
+  color:$brand-purple;
+  svg{
+    fill: $brand-purple;
+  }
+  
+}
+  }

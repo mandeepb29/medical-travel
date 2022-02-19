@@ -577,6 +577,15 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       .result-card-body {
         margin-top: 1rem; } }
 
+.package-container {
+  margin-top: 2rem; }
+
+.package-name {
+  color: #473198;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.6rem; }
+
 .icon-text {
   display: flex;
   align-items: center; }
@@ -703,6 +712,27 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
     background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+
+.star-container {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin: 0.25rem 0 1rem; }
+  .star-container input {
+    display: none; }
+  .star-container label {
+    display: inline-block;
+    padding-right: 1rem;
+    font-size: 2rem;
+    color: #949B93;
+    cursor: pointer; }
+    .star-container label i {
+      font-size: 2rem; }
+    .star-container label:hover, .star-container label:hover ~ .star-container label {
+      color: #473198; }
+  .star-container input:checked ~ label {
+    color: #473198; }
+    .star-container input:checked ~ label svg {
+      fill: #473198; }
 
 .navbar {
   background: #FFFFFF;

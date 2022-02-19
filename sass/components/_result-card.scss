@@ -56,3 +56,15 @@
     
 }
 
+.package{
+    &-container{
+        margin-top: 2rem;
+        //border-top:1px solid $border-grey;
+    }
+    &-name{
+        color: $brand-purple;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+}
