@@ -630,6 +630,12 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
     justify-content: space-between; }
     .treatment-card-content .btn {
       margin-left: auto; }
+  .treatment-card-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem; }
+    .treatment-card-list li {
+      margin-bottom: 0.4rem; }
 
 .destination-card {
   height: 20rem;
