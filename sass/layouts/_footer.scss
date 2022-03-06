@@ -3,7 +3,7 @@
     padding: 3rem 0 2rem;
 
     &-logo{
-        width: 20rem;
+        width: 22rem;
 
         &-wrapper{
             padding-right: 3rem;
@@ -29,6 +29,14 @@
                 color:$color-white;
             }
         }
+    }
+    &-logo-text{
+        font-weight: 300;
+        font-size: 1.38rem;
+        margin-top: 0.4rem;
+        font-family: Karla, sans-serif;
+        display: inline-block;
+
     }
 }
 

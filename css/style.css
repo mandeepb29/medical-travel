@@ -409,6 +409,8 @@ h6, .h6 {
   .blog-content h5 {
     color: #14080E; }
 
+.blog-header {
+  margin-bottom: 6rem; }
   @media (max-width: 47.99em) {
     .blog-header {
       margin-bottom: 0; } }
@@ -803,6 +805,15 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       left: 50%;
       transform: translateX(-50%); } }
 
+.nav-text {
+  letter-spacing: -0.02rem;
+  font-size: 1.4rem;
+  font-family: Karla, sans-serif;
+  font-weight: 500;
+  line-height: 110%;
+  display: inline-block;
+  margin-top: 0.2rem; }
+
 .search-toggle {
   color: #404040;
   margin-left: 3rem;
@@ -900,7 +911,7 @@ section {
   background-color: #473198;
   padding: 3rem 0 2rem; }
   .footer-logo {
-    width: 20rem; }
+    width: 22rem; }
     .footer-logo-wrapper {
       padding-right: 3rem; }
   .footer-menu {
@@ -918,6 +929,12 @@ section {
       margin-bottom: 1rem; }
       .footer-menu-link:hover {
         color: #ffffff; }
+  .footer-logo-text {
+    font-weight: 300;
+    font-size: 1.38rem;
+    margin-top: 0.4rem;
+    font-family: Karla, sans-serif;
+    display: inline-block; }
 
 .social-icons {
   display: flex;
