@@ -14,7 +14,7 @@ function closeSearch($event) {
   $('#search-open').css('display', 'block');
   $('#search-close').css('display', 'none');
   }
-  console.log("close search", $event.target.id);
+  //console.log("close search", $event.target.id);
 }
 
 function showFilters(){
@@ -29,7 +29,9 @@ function closeFilters(){
 
 document.body.addEventListener('click',closeSearch, true);
 
-
+function closeAlert(){
+  $(".alert").alert('close')
+}
 // //owl carousel in blog
 // $(document).ready(function(){
 //   $('.owl-carousel').owlCarousel();
