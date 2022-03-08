@@ -1339,3 +1339,17 @@ section {
 .after-img::before {
   content: "After";
   right: 1rem; }
+
+  .custom-alert{
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 50;
+    width: 70rem;
+    max-width: 90%;
+    left: 50%;
+    top: 9rem;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 18px 30px 2px hsla(0, 0%, 0%, 0.08);;
+  }
