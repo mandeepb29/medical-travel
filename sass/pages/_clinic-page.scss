@@ -40,9 +40,11 @@
     &-img{
         border-radius:2.4rem;
         box-shadow: $shadow-xl;
-        max-height: 35rem;
+        max-height: 40rem;
         object-fit: cover;
         object-position: center;
+        width: auto;
+        max-width: 100%;
         @include res(md){
             margin-top: 3rem;
         }

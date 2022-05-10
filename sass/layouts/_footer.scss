@@ -66,3 +66,50 @@
         }
     }
 }
+
+.treatment{
+    &-list{
+        padding:7rem 0 3rem;
+        background-color: $color-cream;
+        border-top: 1px solid $border-grey;
+        border-top: 1px solid $border-grey;
+    }
+
+    &-heading{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+        letter-spacing: 0;
+        img{
+            height: 1.8rem;
+            width: auto;
+            margin-right: 1rem;
+        }
+        .text{
+            color: $brand-dark;
+        }
+        .number{
+            color: $text-grey;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+    }
+    &-body{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        li{
+            margin-bottom: 0.5rem;
+
+            a{
+                font-weight: 500;
+                color: $brand-purple;
+            }
+        }
+        margin-bottom: 4rem;
+    }
+}

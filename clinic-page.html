@@ -163,7 +163,7 @@
           </div>
          
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex justify-content-center">
           <img src="https://images.pexels.com/photos/10369514/pexels-photo-10369514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="#" class="clinic-img">
         </div>
       </div>
@@ -621,7 +621,7 @@ If you are a past patient of BioFertility Center please click the 'write review'
           </p>
 
           <div class="text-center mt-4">
-            <a class="btn btn-md btn-primary" href="./add-review.html">
+            <a class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">
               Write a Review
             </a>
           </div>
@@ -784,7 +784,180 @@ If you are a past patient of BioFertility Center please click the 'write review'
 
     </div>
   </footer>
+
 </body>
+  <!--ADD REVIEW MODAL-->
+  <!-- Modal -->
+<div class="modal fade px-0" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content card card-sm py-3">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="addReviewModalLabel">Fill this form to submit your review</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-left">
+          <form>
+            <div class="row">
+              <div class="col-12">
+                <h6 class="mt-2 mb-4">
+                  Give your review - 
+                </h6>
+
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <p class="text-grey text-700 p-sm">
+                      For Quality
+                    </p>
+  
+                      <div class="star-container">
+                        <input type="radio" id="Qualitystar-1" name="Qualitystar"/>
+                        <label for="Qualitystar-1"><i data-feather="star"></i></label>
+                        <input type="radio" id="Qualitystar-2" name="Qualitystar"/>
+                        <label for="Qualitystar-2"><i data-feather="star"></i></label>
+                        <input type="radio" id="Qualitystar-3" name="Qualitystar"/>
+                        <label for="Qualitystar-3"><i data-feather="star"></i></label>
+                        <input type="radio" id="Qualitystar-4" name="Qualitystar"/>
+                        <label for="Qualitystar-4"><i data-feather="star"></i></label>
+                        <input type="radio" id="Qualitystar-5" name="Qualitystar"/>
+                        <label for="Qualitystar-5"><i data-feather="star"></i></label>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <p class="text-grey text-700 p-sm">
+                      For Service
+                    </p>
+  
+                      <div class="star-container">
+                        <input type="radio" id="Servicestar-1" name="Servicestar"/>
+                        <label for="Servicestar-1"><i data-feather="star"></i></label>
+                        <input type="radio" id="Servicestar-2" name="Servicestar"/>
+                        <label for="Servicestar-2"><i data-feather="star"></i></label>
+                        <input type="radio" id="Servicestar-3" name="Servicestar"/>
+                        <label for="Servicestar-3"><i data-feather="star"></i></label>
+                        <input type="radio" id="Servicestar-4" name="Servicestar"/>
+                        <label for="Servicestar-4"><i data-feather="star"></i></label>
+                        <input type="radio" id="Servicestar-5" name="Servicestar"/>
+                        <label for="Servicestar-5"><i data-feather="star"></i></label>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <p class="text-grey text-700 p-sm">
+                      For Cleanliness
+                    </p>
+  
+                      <div class="star-container">
+                        <input type="radio" id="Cleanlinessstars-1" name="Cleanlinessstars"/>
+                        <label for="Cleanlinessstars-1"><i data-feather="star"></i></label>
+                        <input type="radio" id="Cleanlinessstars-2" name="Cleanlinessstars"/>
+                        <label for="Cleanlinessstars-2"><i data-feather="star"></i></label>
+                        <input type="radio" id="Cleanlinessstars-3" name="Cleanlinessstars"/>
+                        <label for="Cleanlinessstars-3"><i data-feather="star"></i></label>
+                        <input type="radio" id="Cleanlinessstars-4" name="Cleanlinessstars"/>
+                        <label for="Cleanlinessstars-4"><i data-feather="star"></i></label>
+                        <input type="radio" id="Cleanlinessstars-5" name="Cleanlinessstars"/>
+                        <label for="Cleanlinessstars-5"><i data-feather="star"></i></label>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <p class="text-grey text-700 p-sm">
+                      For Comfort
+                    </p>
+  
+                      <div class="star-container">
+                        <input type="radio" id="Comfortstar-1" name="Comfortstar"/>
+                        <label for="Comfortstar-1"><i data-feather="star"></i></label>
+                        <input type="radio" id="Comfortstar-2" name="Comfortstar"/>
+                        <label for="Comfortstar-2"><i data-feather="star"></i></label>
+                        <input type="radio" id="Comfortstar-3" name="Comfortstar"/>
+                        <label for="Comfortstar-3"><i data-feather="star"></i></label>
+                        <input type="radio" id="Comfortstar-4" name="Comfortstar"/>
+                        <label for="Comfortstar-4"><i data-feather="star"></i></label>
+                        <input type="radio" id="Comfortstar-5" name="Comfortstar"/>
+                        <label for="Comfortstar-5"><i data-feather="star"></i></label>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <p class="text-grey text-700 p-sm">
+                      For Communication
+                    </p>
+  
+                      <div class="star-container">
+                        <input type="radio" id="Communicationstar-1" name="Communicationstar"/>
+                        <label for="Communicationstar-1"><i data-feather="star"></i></label>
+                        <input type="radio" id="Communicationstar-2" name="Communicationstar"/>
+                        <label for="Communicationstar-2"><i data-feather="star"></i></label>
+                        <input type="radio" id="Communicationstar-3" name="Communicationstar"/>
+                        <label for="Communicationstar-3"><i data-feather="star"></i></label>
+                        <input type="radio" id="Communicationstar-4" name="Communicationstar"/>
+                        <label for="Communicationstar-4"><i data-feather="star"></i></label>
+                        <input type="radio" id="Communicationstar-5" name="Communicationstar"/>
+                        <label for="Communicationstar-5"><i data-feather="star"></i></label>
+                      </div>
+                  </div>
+                </div>
+                 
+              </div>
+             
+              <div class="col-md-12">
+                <label for="nameInput" class="form-label">Name*</label>
+              <input type="text" class="form-input"
+            placeholder="Enter your name" aria-label="First Name" id="nameInput" name="name" required> 
+          </div>
+
+
+          <div class="col-xl-6 mt-4">
+            <label for="email" class="form-label">Email*</label>
+        <input type="email" class="form-input" placeholder="Email" aria-label="Email" id="email" name="email" required>
+    </div>
+ 
+      <div class="col-xl-6 col-lg-8 mt-4">
+        <label for="code" class="form-label">Phone Number*</label>
+        <div class="row">
+        
+          <div class="col-4">
+            <select class="form-select" id="code" name="phone_code" required>
+      <option data-countryCode="IN" value="91">India (+91)</option>
+      <option data-countryCode="JP" value="81">Japan (+81)</option>
+  
+              </select>
+          </div>
+          <div class="col-8">
+            <input type="number" class="form-input" 
+            placeholder="Enter your phone number" aria-label="Enter your phone number" name="phone_number" required>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-12 mt-4">
+          <label for="review">Review*</label>
+            <textarea class="form-input" 
+            rows="4"
+            placeholder="Please enter your review" id="review" name="review_text"></textarea>
+        </div>
+      
+            <div class="col-12 mt-5 pb-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary btn-md" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>  
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/feather-icons"></script>

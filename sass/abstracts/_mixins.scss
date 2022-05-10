@@ -21,6 +21,11 @@
 
 @mixin res($break-point){
     // -- >1200px normal css will apply 
+    @if $break-point == xl {
+        @media (max-width:87.99em) { // --1199.98px (large screens - eg. small laptops or landscape tablets) <1200
+            @content
+        };
+    }
     @if $break-point == lg {
         @media (max-width:74.99em) { // --1199.98px (large screens - eg. small laptops or landscape tablets) <1200
             @content

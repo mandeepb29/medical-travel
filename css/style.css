@@ -953,6 +953,41 @@ section {
     .social-icons-wrapper h5 {
       margin: 0; }
 
+.treatment-list {
+  padding: 7rem 0 3rem;
+  background-color: #FCF7F3;
+  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #EDEDED; }
+
+.treatment-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0; }
+  .treatment-heading img {
+    height: 1.8rem;
+    width: auto;
+    margin-right: 1rem; }
+  .treatment-heading .text {
+    color: #14080E; }
+  .treatment-heading .number {
+    color: #404040;
+    opacity: 0.6;
+    font-weight: 400; }
+
+.treatment-body {
+  margin-bottom: 4rem; }
+  .treatment-body ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem; }
+  .treatment-body li {
+    margin-bottom: 0.5rem; }
+    .treatment-body li a {
+      font-weight: 500;
+      color: #473198; }
+
 .section-details {
   background-color: #EBFAEE;
   width: 100%; }
@@ -982,11 +1017,27 @@ section {
     background-position: center 6rem;
     background-size: 100%; } }
 
+.hero-section-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 3rem; }
+  .hero-section-list li {
+    display: flex;
+    align-items: center; }
+    .hero-section-list li img {
+      width: auto;
+      height: 2rem; }
+    .hero-section-list li p, .hero-section-list li .icon-text span, .icon-text .hero-section-list li span {
+      margin-left: 1rem;
+      margin-bottom: 0;
+      font-weight: 600;
+      color: #404040; }
+
 .search-box {
-  transform: translateY(-20vh);
+  transform: translateY(-15vh);
   width: 82rem;
   margin-bottom: -15vh; }
-  @media (max-width: 74.99em) {
+  @media (max-width: 87.99em) {
     .search-box {
       transform: none;
       margin-top: 2rem;
@@ -1115,6 +1166,19 @@ section {
   letter-spacing: -0.04em;
   color: #ffffff; }
 
+.custom-alert {
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 50;
+  width: 70rem;
+  max-width: 90%;
+  left: 50%;
+  top: 9rem;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 18px 30px 2px rgba(0, 0, 0, 0.08); }
+
 .results-actions {
   display: flex;
   justify-content: flex-end;
@@ -1233,9 +1297,11 @@ section {
 .clinic-img {
   border-radius: 2.4rem;
   box-shadow: 0px 35px 50px 2px rgba(0, 0, 0, 0.12);
-  max-height: 35rem;
+  max-height: 40rem;
   object-fit: cover;
-  object-position: center; }
+  object-position: center;
+  width: auto;
+  max-width: 100%; }
   @media (max-width: 61.99em) {
     .clinic-img {
       margin-top: 3rem; } }
@@ -1339,17 +1405,3 @@ section {
 .after-img::before {
   content: "After";
   right: 1rem; }
-
-  .custom-alert{
-    margin-bottom: 0;
-    position: fixed;
-    z-index: 50;
-    width: 70rem;
-    max-width: 90%;
-    left: 50%;
-    top: 9rem;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 18px 30px 2px hsla(0, 0%, 0%, 0.08);;
-  }
