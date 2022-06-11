@@ -1,84 +1,97 @@
-.card-body {
-    background-color: $color-white;
-}
-
-.region{
-    width: 2.5rem;
-}
-
-.company{
-    width: 12rem;
-}
-
-.flag{
-    width: 2rem;
-}
-
-.table-top {
-    background-color: #f3eded;
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important;
-}
-
-.table-bottom {
-    background-color: #e9e3e3;
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important;
-}
-
-.card {
-    padding: 1.2rem 1.4rem !important;
-}
-
-table {
-    td,th
-    {
-        vertical-align: middle;
+.dental-clinic-section{
+    .card-body {
+        background-color: $color-white;
     }
+    
+    .region{
+        width: 3rem;
+    }
+    
+    .company{
+        width: 12rem;
+    }
+    
+    .type-icon {
+        width: 3rem;
+    }
+    
+    .flag{
+        width: 2.4rem;
+    }
+    
+    .table-top {
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+        border-bottom: 1px solid #00000021 !important;
+    }
+    
+    .table-bottom {
+        //background-color: #e9e3e3;
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+    }
+    
+
+    table {
+        td,th
+        {
+            vertical-align: middle;
+        }
+    }
+    
+    .btn-left-side {
+        padding: 1rem 0.5rem !important;
+        margin-left: 2.5rem;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .btn-right-side{
+        padding: 1rem 1rem !important;
+        margin-right: 0.5rem !important;
+        margin-left: 1rem;
+    }
+    
+    
+    .btn-1 {
+        padding: 0.6rem 1.2rem !important;
+        margin-right: 0.5rem !important;
+        margin-left: 1.5rem !important;
+        margin-top: 0.2rem;
+        color: #222222;
+        background-color: #c5bfbf;
+    }
+    
+    .table-icon {
+        font-weight: 50rem;
+        font-size: 50rem;
+    }
+    
+    .btn-2 {
+        padding: 0.6rem 1.2rem !important;
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+        margin-top: 0.2rem;
+        color: #222222;
+        background-color: #c5bfbf;
+    }
+    
+    .btn-left-side.active {
+        border-color: $brand-pink;
+        color: $brand-pink;
+    }
+    
+    thead tr{
+        border-bottom: 2px solid gainsboro !important;
+    }
+
+    .ranking,
+    .pointer{
+        font-size: 1.3rem;
+        height: 2.3rem;
+        vertical-align: middle;
+        width: 1.8rem;
+        margin-left: 0.2rem;
+    }
+    
 }
 
-.btn-top {
-    padding: 1rem 1.5rem !important;
-    margin-right: 0.5rem !important;
-    margin-left: 1.5rem;
-    border-bottom: 4px solid transparent;
-}
-
-.btn-bottom{
-    padding: 1rem 1.5rem !important;
-    margin-right: 0.5rem !important;
-    margin-left: 1.5rem;
-}
-
-
-.btn-1 {
-    padding: 0.6rem 1.2rem !important;
-    margin-right: 0.5rem !important;
-    margin-left: 1.5rem !important;
-    margin-top: 0.2rem;
-    color: #222222;
-    background-color: #c5bfbf;
-}
-
-.table-icon {
-    font-weight: 50rem;
-    font-size: 50rem;
-}
-
-.btn-2 {
-    padding: 0.6rem 1.2rem !important;
-    margin-right: 0.5rem !important;
-    margin-left: 0.5rem !important;
-    margin-top: 0.2rem;
-    color: #222222;
-    background-color: #c5bfbf;
-}
-
-.btn-top.active {
-    border-color: $brand-pink;
-    color: $brand-pink;
-}
-
-thead{
-    border-bottom:2px solid gainsboro !important;
-}
