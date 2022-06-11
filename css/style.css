@@ -415,8 +415,6 @@ h6, .h6 {
   .blog-content h5 {
     color: #14080E; }
 
-.blog-header {
-  margin-bottom: 6rem; }
   @media (max-width: 47.99em) {
     .blog-header {
       margin-bottom: 0; } }
