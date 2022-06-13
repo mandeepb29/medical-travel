@@ -19,11 +19,63 @@
     .flag{
         width: 2.4rem;
     }
+
+    .card-header{
+        padding: 0 1rem;
+    }
     
     .table-top {
-        padding-top: 0.4rem !important;
-        padding-bottom: 0.4rem !important;
-        border-bottom: 1px solid #00000021 !important;
+        
+        display: flex;
+        border-bottom: 1.2px solid rgba($light-grey,0.6);
+
+        .category{
+            &-filter{
+                padding: 0;
+                
+
+                &:nth-child(:last-child){
+                    label{
+                        padding-right: 0;
+                    }
+                    
+                }
+                &:nth-child(:first-child){
+                    label{
+                        padding-left: 0;
+                    }
+                }
+            }
+            &-input{
+                display: none;
+
+                &:checked + label {
+                    border-bottom: 1.2px solid $brand-pink;
+                    font-weight: 700;
+                }
+            }
+            &-label{
+                margin: 0;
+                font-size: 1.6rem;
+                border-bottom: 1.2px solid rgba($light-grey,0.6);
+                padding: 1rem 2rem;
+                display: flex;
+                align-items: center;
+                gap:4px;
+
+            }
+        }
+        // .btn{
+        //     &:not(:first-child){
+        //         margin-left: 1.6rem;
+        //         border-bottom: 2px solid transparent;
+        //     }
+
+        //     &.active{
+        //         border-color: $brand-pink;
+        //         color: $brand-pink;
+        //     }
+        // }
     }
     
     .table-bottom {
@@ -39,19 +91,6 @@
             vertical-align: middle;
         }
     }
-    
-    .btn-left-side {
-        padding: 1rem 0.5rem !important;
-        margin-left: 2.5rem;
-        border-bottom: 3px solid transparent;
-    }
-    
-    .btn-right-side{
-        padding: 1rem 1rem !important;
-        margin-right: 0.5rem !important;
-        margin-left: 1rem;
-    }
-
         //padding: 0.6rem 1.2rem !important;
         //margin-right: 1rem !important;
         //margin-left: 0.5rem !important;
@@ -63,14 +102,12 @@
         font-size: 50rem;
     }
     
-    
-    .btn-left-side.active {
-        border-color: $brand-pink;
-        color: $brand-pink;
-    }
-    
     thead tr{
         border-bottom: 2px solid gainsboro !important;
+
+        th{
+            font-weight: 600;
+        }
     }
 
     .ranking,
