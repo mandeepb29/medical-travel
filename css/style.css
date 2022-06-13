@@ -415,6 +415,8 @@ h6, .h6 {
   .blog-content h5 {
     color: #14080E; }
 
+.blog-header {
+  margin-bottom: 6rem; }
   @media (max-width: 47.99em) {
     .blog-header {
       margin-bottom: 0; } }
@@ -1283,25 +1285,9 @@ section {
   margin-right: 0.5rem !important;
   margin-left: 1rem; }
 
-.dental-clinic-section .btn-1 {
-  padding: 0.6rem 1.2rem !important;
-  margin-right: 0.5rem !important;
-  margin-left: 1.5rem !important;
-  margin-top: 0.2rem;
-  color: #222222;
-  background-color: #c5bfbf; }
-
 .dental-clinic-section .table-icon {
   font-weight: 50rem;
   font-size: 50rem; }
-
-.dental-clinic-section .btn-2 {
-  padding: 0.6rem 1.2rem !important;
-  margin-right: 0.5rem !important;
-  margin-left: 0.5rem !important;
-  margin-top: 0.2rem;
-  color: #222222;
-  background-color: #c5bfbf; }
 
 .dental-clinic-section .btn-left-side.active {
   border-color: #E91E63;
