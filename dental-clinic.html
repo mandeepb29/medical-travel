@@ -12,17 +12,14 @@
   <meta content="MyTripMed" name="author" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="MyTripMed - The Best Place for Medical Tourism" />
-  <meta
-    content="keywords"
-    name="MyTripMed, beauty, medical travel, surgery, cosmetic surgery"
-  />
+  <meta content="keywords" name="MyTripMed, beauty, medical travel, surgery, cosmetic surgery" />
   <meta content="MyTripMed.com" name="image" />
   <meta content="800" name="image:width" />
   <meta content="400" name="image:height" />
   <title>MyTripMed - Search Results</title>
   <link rel="stylesheet" href="./css/style.css">
-     <!-- Favicon Icon -->
-     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
 </head>
 
@@ -44,8 +41,8 @@
         <img src="./img/x.svg" class="search-toggle" id="search-close" alt="close search" onclick="closeSearch()"> -->
         <div class="search-box-1 pt-3">
           <form onsubmit="triggerSearch()">
-          <input type="text" placeholder="Search by clinic, treatment or a location" id="search-header"
-            name="search_header">
+            <input type="text" placeholder="Search by clinic, treatment or a location" id="search-header"
+              name="search_header">
           </form>
         </div>
       </div>
@@ -110,343 +107,380 @@
 
   </nav>
 
-<!--HEADER ENDS-->
-<!--Search SECTION STARTS-->
-      <!-- <section class="top-section bg-cream">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-10">
-                    <div class="card">
-                        <h5>
-                          Search for clinics, treatments and locations
-                        </h5>
+  <section class="dental-clinic-section top-section">
+    <div class="container">
+      <h2 class="text-dark mb-5 text-center pb-2">
+        Ranking of top dental clinics and doctors
+      </h2>
 
-                        <div class="row mt-3">
-                          <div class="col-sm-9">
-                            <div class="form-group mb-4 mb-sm-0">
-                         <input type="text" class="form-input" id="searchbar" placeholder="Type name of a clinic, treatment or a  location">
-                          </div>
-                             
-                          </div>
-                          <div class="col-sm-3 d-flex justify-content-end align-items-end">
-                                  <a href="./results.html" type="button" class="btn btn-primary">Search</a>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-         
-        </div>
-        </section> -->
+      <div class="card p-0">
+        <div class="card-header bg-white">
+          <div class="filters-categories">
 
-        
-        <section class="dental-clinic-section top-section">
-            <div class="container">
-              <h2 class="text-dark mb-5 text-center pb-2">
-               Ranking of top dental clinics and doctors
-              </h2>
-
-                <div class="card p-0">
-                  <div class="card-header bg-white">
-                    <div class="table-top fs-4">
-
-                      <div class="category-filter">
-                        <input class="category-input" type="radio" name="category" id="category-1" checked>
-						<label class="category-label" for="category-1">
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-1" checked>
+              <label class="category-label" for="category-1">
                 <img src="..//medical-travel/img/tooth.png" alt="tooth" class="type-icon">
-                      Dentals
-						</label>
-                      </div>
+                Dentals
+              </label>
+            </div>
 
-                      <div class="category-filter">
-                        <input class="category-input" type="radio" name="category" id="category-2" >
-						<label class="category-label" for="category-2">
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-2">
+              <label class="category-label" for="category-2">
                 <img src="..//medical-travel/img/Aesthetic.png" alt="tooth" class="type-icon">
-                      Aesthetic
-						</label>
-                      </div>
+                Aesthetic
+              </label>
+            </div>
 
-                      <div class="category-filter">
-                        <input class="category-input" type="radio" name="category" id="category-3" >
-						<label class="category-label" for="category-3">
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-3">
+              <label class="category-label" for="category-3">
                 <img src="..//medical-travel/img/hair.png" alt="tooth" class="type-icon">
-                      Hair
-						</label>
-                      </div>
-                      
-                      </div>
-  
-                      <div class="table-bottom fs-4">
-
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                          <label class="btn btn-outline" for="btnradio1">Radio 1</label>
-                        
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                          <label class="btn btn-outline" for="btnradio2">Radio 2</label>
-                        
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                          <label class="btn btn-outline" for="btnradio3">Radio 3</label>
-                        </div>
-
-                          <!-- 
-                            <div class="container-1">
-                          <input type="radio" name="size" id="small">
-                          <label for="small">Small</label>
-
-                          <input type="radio" name="size" id="large">
-                          <label for="large">Large</label>
-                          -->
-
-                         
-
-
-                          
-                        <!--  
-                        <input type="radio" hidden name="country" id="Tunisia" class="radio-btn">
-                        
-                          //<label for="Tunisia">
-                            <span class="circle"></span>
-                            <span class="filter">
-                              Tunisia<img src="../medical-travel/img/Tunisia.png" 
-                              alt="Tunisia" class="flag"></span></label>
-                          
-                          <input type="radio" hidden name="country" id="Spain" class="">
-  
-                            <label for="Spain">
-                                <span class="circle"></span>
-                                <span class="filter">
-                                  Spain<img src="../medical-travel/img/Spain.png" 
-                                  alt="Spain" class="flag"></span></label>
-  
-                          <input type="radio" hidden name="country" id="Czech Republic" class="radiobtn">
-  
-                          <label for="Czech Republic">
-                            <span class="circle"></span>
-                            <span class="filter">
-                              Czech Republic<img src="../medical-travel/img/Czech Republic.png" 
-                              alt="Czech Republic" class="flag"></span></label>
-  
-                          <input type="radio" hidden name="country" id="Greece" class="radiobtn">
-  
-                          <label for="Greece">
-                            <span class="circle"></span>
-                            <span class="filter">
-                              Greece<img src="../medical-travel/img/Greece.png" 
-                              alt="Greece" class="flag"></span></label>
-                             -->
-
-                        </div>
-
-                        </div>
-                  
-          
-                  <div class="card-body">
-                      <table class="table fs-3 mt-sm-4 text-center text-400">
-                        <thead>
-                          <tr>
-                            <th class="text-purple text-400" scope="col">Rank 
-                              <i class="thead-icon" data-feather="chevron-up"></i>
-                            </th>
-                            <th scope="col">Doctors & Clinic
-                              <i class="thead-icon" data-feather="chevron-down"></i>
-                            </th>
-                            <th scope="col">Regions
-                              <i class="thead-icon " data-feather="chevron-down"></i>
-                            </th>
-                            <th scope="col">Reviews scores
-                              <i class="thead-icon" data-feather="chevron-down"></i>
-                            </th>
-                            <th scope="col">Quality scores
-                              <i class="thead-icon" data-feather="chevron-down"></i>
-                            </th>
-                            <th class="text-purple text-400" scope="col">Points
-                              <i class="thead-icon" data-feather="chevron-down"></i>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th class="text-purple text-800" scope="row mt-5 mb-4">1
-                              <span class="text-purple text-800 ranking">
-                                <i class="pointer" data-feather="minus"></i></span></th>
-                            <td>
-                              <img src="..//medical-travel/img/baydent-logo.jpg" alt="" class="company"></td>
-                            <td>
-                              <img src="..//medical-travel/img/turkey.png" alt="" class="region">
-                              TUR
-                            </td>
-                            <td>20</td>
-                            <td>17</td>
-                            <td class="text-purple text-800">7061</td>
-                          </tr>
-
-                          <tr>
-                            <th class="text-purple text-800" scope="row mt-5 mb-4">2
-                              <span class="text-success	ranking">
-                                <i class="pointer" data-feather="chevron-up"></i>2</span>
-                             </th>
-                            <td>
-                              <img src="..//medical-travel/img/baydent-logo.jpg" alt="" class="company"></td>
-                            <td>
-                              <img src="..//medical-travel/img/turkey.png" alt="" class="region">
-                              TUR
-                            </td>
-                            <td>20</td>
-                            <td>17</td>
-                            <td class="text-purple text-800">7061</td>
-                          </tr>
-
-                          <tr>
-                            <th class="text-purple text-600" scope="row mt-5 mb-4">3
-                              <span class="text-danger ranking">
-                                <i class="pointer" data-feather="chevron-down"></i>3</span>
-                            <td>
-                              <img src="..//medical-travel/img/baydent-logo.jpg" alt="" class="company"></td>
-                            <td>
-                              <img src="..//medical-travel/img/Turkey.png" alt="" class="region">
-                              TUR
-                            </td>
-                            <td>20</td>
-                            <td>17</td>
-                            <td class="text-purple text-800">7061</td>
-                          </tr>
-                         
-                        </tbody>
-                      </table>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-grid gap-1 col-sm-2 mx-sm-auto pt-5">
-                <button class="btn btn-primary" type="button">Show More</button>
+                Hair
+              </label>
             </div>
 
-          </section>
-        
-          <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-md-12">
-                  <div class="footer-logo-wrapper">
-                    <div class="footer-logo">
-                      <img src="./img/logo-white.png" alt="logo">
-                      <span class="footer-logo-text text-white">
-                        the best place for medical tourism
-                      </span>              
-                    </div>
-        
-                    <p class="mt-4 text-purple-light">
-                      of classical Latin literature from 45 BC, making it over 2000 years old.
-                      Richard McClintock, a Latin professor at</p>
-        
-                    <a href="./free-quote.html" class="btn btn-white btn-icon-text mt-5 mb-3">
-                      Request a Quote
-                      <i data-feather="message-square"></i>
-                    </a>
-        
-                    <div class="social-icons-wrapper">
-        
-                      <h5 class="subheading text-white">find us on</h5>
-                      <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i data-feather="twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
-                        <a href="https://www.linkedin.com" target="_blank"><i data-feather="linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
-        
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-4">
-                  <div class="footer-menu">
-                    <h5 class="footer-menu-heading">
-                      MENU
-                    </h5>
-        
-                    <div class="footer-menu-list">
-                      <a href="#" class="footer-menu-link">Treatments</a>
-                      <a href="#" class="footer-menu-link">Destinations</a>
-                      <a href="#" class="footer-menu-link">Diseases</a>
-                      <a href="#" class="footer-menu-link">Doctors</a>
-                      <a href="./blog.html" class="footer-menu-link">Blog</a>
-                      <a href="./contact.html" class="footer-menu-link">Contact</a>
-                      <a href="./add-clinic.html" class="footer-menu-link">Add Clinic</a>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-4">
-                  <div class="footer-menu">
-                    <h5 class="footer-menu-heading">
-                      ABOUT COMPANY
-                    </h5>
-                    <div class="footer-menu-list">
-                      <a href="#" class="footer-menu-link">About Us</a>
-                      <a href="#" class="footer-menu-link">Careers</a>
-                      <a href="#" class="footer-menu-link">Reviews</a>
-                      <a href="#" class="footer-menu-link">Policy</a>
-                      <a href="#" class="footer-menu-link">Terms and Conditions</a>
-                    </div>
-                  </div>
-        
-                </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-4">
-                  <div class="footer-menu">
-                    <h5 class="footer-menu-heading">
-                      CONTACT US
-                    </h5>
-                    <div class="footer-menu-list">
-                      <h5 class="text-400 text-purple-light">
-                        Phone
-                      </h5>
-                      <hr class="bg-white">
-                      <a href="tel:00000000" class="footer-menu-link">
-                        <span class="text-300">Ukraine - </span>
-                        <span class="text-600 text-white">4566-4568-7566</span>
-                      </a>
-                      <a href="tel:00000000" class="footer-menu-link">
-                        <span class="text-300">Russia - </span>
-                        <span class="text-600 text-white">4566-4568-7566</span>
-                      </a>
-                      <a href="tel:00000000" class="footer-menu-link">
-                        <span class="text-300">Europe - </span>
-                        <span class="text-600 text-white">4566-4568-7566</span>
-                      </a>
-                      <a href="tel:00000000" class="footer-menu-link">
-                        <span class="text-300">USA - </span>
-                        <span class="text-600 text-white">4566-4568-7566</span>
-                      </a>
-                    </div>
-        
-                    <div class="footer-menu-list mt-5">
-                      <h5 class="text-400 text-purple-light">
-                        Email
-                      </h5>
-                      <hr class="bg-white">
-                      <a href="mailto:contact@mytripmed.com" class="footer-menu-link">
-                        <span class="text-300">Mail ID - </span>
-                        <span class="text-600 text-white">contact@mytripmed.com</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        
-              <hr class="bg-white mb-4">
-        
-              <p class="text-center text-purple-light">
-                © Copyright MyTripMed 2022
-              </p>
-        
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-11" checked>
+              <label class="category-label" for="category-11">
+                <img src="..//medical-travel/img/tooth.png" alt="tooth" class="type-icon">
+                Dentals
+              </label>
             </div>
-          </footer>
+
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-12">
+              <label class="category-label" for="category-12">
+                <img src="..//medical-travel/img/Aesthetic.png" alt="tooth" class="type-icon">
+                Aesthetic
+              </label>
+            </div>
+
+            <div class="category-filter">
+              <input class="category-input" type="radio" name="category" id="category-13">
+              <label class="category-label" for="category-13">
+                <img src="..//medical-travel/img/hair.png" alt="tooth" class="type-icon">
+                Hair
+              </label>
+            </div>
+            
+
+          </div>
+
+          <div class="filters-countries">
+
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Tunisia" class="radio-btn">
+              <label for="Tunisia">
+                Tunisia<img src="../medical-travel/img/Tunisia.png" alt="Tunisia" class="flag">
+              </label>
+            </div>
+
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Spain" class="">
+              <label for="Spain">
+                Spain<img src="../medical-travel/img/Spain.png" alt="Spain" class="flag">
+              </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Czech Republic" class="radiobtn">
+              <label for="Czech Republic">
+                Czech Republic<img src="../medical-travel/img/Czech Republic.png" alt="Czech Republic"
+                  class="flag">
+                </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Greece" class="radiobtn">
+              <label for="Greece">
+                Greece<img src="../medical-travel/img/Greece.png" alt="Greece" class="flag">
+              </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Tunisia1" class="radio-btn">
+              <label for="Tunisia1">
+                Tunisia<img src="../medical-travel/img/Tunisia.png" alt="Tunisia1" class="flag">
+              </label>
+            </div>
+
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Spain1" class="">
+              <label for="Spain1">
+                Spain<img src="../medical-travel/img/Spain.png" alt="Spain" class="flag">
+              </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Czech Republic1" class="radiobtn">
+              <label for="Czech Republic1">
+                Czech Republic<img src="../medical-travel/img/Czech Republic.png" alt="Czech Republic"
+                  class="flag">
+                </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Greece1" class="radiobtn">
+              <label for="Greece1">
+                Greece<img src="../medical-travel/img/Greece.png" alt="Greece" class="flag">
+              </label>
+            </div>
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Tunisia2" class="radio-btn">
+              <label for="Tunisia2">
+                Tunisia<img src="../medical-travel/img/Tunisia.png" alt="Tunisia" class="flag">
+              </label>
+            </div>
+
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Spain2" class="">
+              <label for="Spain2">
+                Spain<img src="../medical-travel/img/Spain.png" alt="Spain" class="flag">
+              </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Czech Republic2" class="radiobtn">
+              <label for="Czech Republic2">
+                Czech Republic<img src="../medical-travel/img/Czech Republic.png" alt="Czech Republic"
+                  class="flag">
+                </label>
+            </div>
+
+            <div class="flag-filter">
+              <input type="radio" hidden name="country" id="Greece2" class="radiobtn">
+              <label for="Greece2">
+                Greece<img src="../medical-travel/img/Greece.png" alt="Greece" class="flag">
+              </label>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="card-body">
+          <table class="table fs-3 text-center text-400 pt-0 mt-0">
+            <thead>
+              <tr>
+                <th class="text-purple text-400" scope="col" style="min-width: 10rem;">Rank
+                  <i class="thead-icon" data-feather="chevron-up"></i>
+                </th>
+                <th scope="col" style="min-width: 22rem;">Doctors & Clinic
+                  <i class="thead-icon" data-feather="chevron-down"></i>
+                </th>
+                <th scope="col" style="min-width: 15rem;">Regions
+                  <i class="thead-icon " data-feather="chevron-down"></i>
+                </th>
+                <th scope="col" style="min-width: 15rem;">Reviews scores
+                  <i class="thead-icon" data-feather="chevron-down"></i>
+                </th>
+                <th scope="col" style="min-width: 15rem;">Quality scores
+                  <i class="thead-icon" data-feather="chevron-down"></i>
+                </th>
+                <th class="text-purple text-400" scope="col" style="min-width: 10rem;">Points
+                  <i class="thead-icon" data-feather="chevron-down"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-purple text-600" scope="row mt-5 mb-4">1
+                  <span class="text-purple text-700 ranking">
+                    <i class="pointer" data-feather="minus"></i></span>
+                </th>
+                <td>
+                  <img src="..//medical-travel/img/baydent-logo.jpg" alt="" class="company">
+                </td>
+                <td class="region-text">
+                  <img src="..//medical-travel/img/turkey.png" alt="" class="region">
+                  TUR
+                </td>
+                <td>20</td>
+                <td>17</td>
+                <td class="text-purple text-700">7061</td>
+              </tr>
+
+              <tr>
+                <th class="text-purple text-600" scope="row mt-5 mb-4">2
+                  <span class="text-success	ranking text-700">
+                    <i class="pointer" data-feather="chevron-up"></i>2</span>
+                </th>
+                <td>
+                  <img src="..//medical-travel/img/esnan.png" alt="" class="company">
+                </td>
+                <td class="region-text"> 
+                  <img src="..//medical-travel/img/turkey.png" alt="" class="region">
+                  TUR
+                </td>
+                <td>20</td>
+                <td>17</td>
+                <td class="text-purple text-700">7061</td>
+              </tr>
+
+              <tr>
+                <th class="text-purple text-600" scope="row mt-5 mb-4">3
+                  <span class="text-danger ranking text-700">
+                    <i class="pointer" data-feather="chevron-down"></i>3</span>
+                <td>
+                  <img src="..//medical-travel/img/baydent-logo.jpg" alt="" class="company">
+                </td>
+                <td class="region-text">
+                  <img src="..//medical-travel/img/Turkey.png" alt="" class="region">
+                  TUR
+                </td>
+                <td>20</td>
+                <td>17</td>
+                <td class="text-purple text-700">7061</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+
+      <div class="d-grid gap-1 col-sm-2 mx-sm-auto pt-5">
+        <button class="btn btn-primary" type="button">Show More</button>
+      </div>
+    </div>
+
+    
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="footer-logo-wrapper">
+            <div class="footer-logo">
+              <img src="./img/logo-white.png" alt="logo">
+              <span class="footer-logo-text text-white">
+                the best place for medical tourism
+              </span>
+            </div>
+
+            <p class="mt-4 text-purple-light">
+              of classical Latin literature from 45 BC, making it over 2000 years old.
+              Richard McClintock, a Latin professor at</p>
+
+            <a href="./free-quote.html" class="btn btn-white btn-icon-text mt-5 mb-3">
+              Request a Quote
+              <i data-feather="message-square"></i>
+            </a>
+
+            <div class="social-icons-wrapper">
+
+              <h5 class="subheading text-white">find us on</h5>
+              <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i data-feather="twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i data-feather="linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="footer-menu">
+            <h5 class="footer-menu-heading">
+              MENU
+            </h5>
+
+            <div class="footer-menu-list">
+              <a href="#" class="footer-menu-link">Treatments</a>
+              <a href="#" class="footer-menu-link">Destinations</a>
+              <a href="#" class="footer-menu-link">Diseases</a>
+              <a href="#" class="footer-menu-link">Doctors</a>
+              <a href="./blog.html" class="footer-menu-link">Blog</a>
+              <a href="./contact.html" class="footer-menu-link">Contact</a>
+              <a href="./add-clinic.html" class="footer-menu-link">Add Clinic</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="footer-menu">
+            <h5 class="footer-menu-heading">
+              ABOUT COMPANY
+            </h5>
+            <div class="footer-menu-list">
+              <a href="#" class="footer-menu-link">About Us</a>
+              <a href="#" class="footer-menu-link">Careers</a>
+              <a href="#" class="footer-menu-link">Reviews</a>
+              <a href="#" class="footer-menu-link">Policy</a>
+              <a href="#" class="footer-menu-link">Terms and Conditions</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="footer-menu">
+            <h5 class="footer-menu-heading">
+              CONTACT US
+            </h5>
+            <div class="footer-menu-list">
+              <h5 class="text-400 text-purple-light">
+                Phone
+              </h5>
+              <hr class="bg-white">
+              <a href="tel:00000000" class="footer-menu-link">
+                <span class="text-300">Ukraine - </span>
+                <span class="text-600 text-white">4566-4568-7566</span>
+              </a>
+              <a href="tel:00000000" class="footer-menu-link">
+                <span class="text-300">Russia - </span>
+                <span class="text-600 text-white">4566-4568-7566</span>
+              </a>
+              <a href="tel:00000000" class="footer-menu-link">
+                <span class="text-300">Europe - </span>
+                <span class="text-600 text-white">4566-4568-7566</span>
+              </a>
+              <a href="tel:00000000" class="footer-menu-link">
+                <span class="text-300">USA - </span>
+                <span class="text-600 text-white">4566-4568-7566</span>
+              </a>
+            </div>
+
+            <div class="footer-menu-list mt-5">
+              <h5 class="text-400 text-purple-light">
+                Email
+              </h5>
+              <hr class="bg-white">
+              <a href="mailto:contact@mytripmed.com" class="footer-menu-link">
+                <span class="text-300">Mail ID - </span>
+                <span class="text-600 text-white">contact@mytripmed.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="bg-white mb-4">
+
+      <p class="text-center text-purple-light">
+        © Copyright MyTripMed 2022
+      </p>
+
+    </div>
+  </footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="./js/main.js"></script>
+
 </html>

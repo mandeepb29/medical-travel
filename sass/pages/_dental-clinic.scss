@@ -4,12 +4,10 @@
         background-color: $color-white;
     }
     
-    .region{
-        width: 3rem;
-    }
-    
     .company{
-        width: 12rem;
+        height: 4rem;
+        width: auto;
+        margin: 0.8rem 0;
     }
     
     .type-icon {
@@ -21,18 +19,20 @@
     }
 
     .card-header{
-        padding: 0 1rem;
+        padding: 1rem 2rem 0;
+        border-bottom: 2px solid $brand-purple-light;
+        background-color: rgba($brand-purple-light,0.5) !important;
     }
     
-    .table-top {
+    .filters-categories {
         
         display: flex;
-        border-bottom: 1.2px solid rgba($light-grey,0.6);
+        border-bottom: 1px solid $brand-purple;
+        overflow-x: scroll;
 
         .category{
             &-filter{
                 padding: 0;
-                
 
                 &:nth-child(:last-child){
                     label{
@@ -46,46 +46,80 @@
                     }
                 }
             }
+
+            &-label{
+                margin: 0;
+                font-size: 1.6rem;
+                padding: 1rem 2rem;
+                display: flex;
+                align-items: center;
+                gap:10px;
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    width: 0%;
+                    transform-origin: center center;
+                    left: 0;
+                    height: 3px;
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                   
+                }
+            }
+
             &-input{
                 display: none;
 
                 &:checked + label {
-                    border-bottom: 1.2px solid $brand-pink;
+                    
                     font-weight: 700;
+
+                    &::before{
+                        background-color: $brand-purple;
+                        width: 100%;
+                    }
                 }
             }
-            &-label{
-                margin: 0;
-                font-size: 1.6rem;
-                border-bottom: 1.2px solid rgba($light-grey,0.6);
-                padding: 1rem 2rem;
+
+        }
+    }
+
+    
+    .filters-countries {
+        //background-color: #e9e3e3;
+        padding: 1rem 2rem;
+        display: flex;
+        gap: 1rem;
+        overflow-x: scroll;
+
+        .flag-filter{
+           
+            label{
+              margin-bottom: 0;
                 display: flex;
                 align-items: center;
-                gap:4px;
+                gap: 4px;
+                padding: 0.4rem 0.8rem;
+                transition-duration: 0.15s;
+                border-radius: 0.4rem;
+                border:1.2px solid rgba($text-grey,0.2);
+                white-space:  nowrap;
 
             }
-        }
-        // .btn{
-        //     &:not(:first-child){
-        //         margin-left: 1.6rem;
-        //         border-bottom: 2px solid transparent;
-        //     }
 
-        //     &.active{
-        //         border-color: $brand-pink;
-        //         color: $brand-pink;
-        //     }
-        // }
-    }
-    
-    .table-bottom {
-        //background-color: #e9e3e3;
-        padding-top: 0.4rem !important;
-        padding-bottom: 0.4rem !important;     
+            input:checked + label{
+                
+                background-color: $brand-purple;
+                color: $color-white;
+            }
+        }
     }
 
     table {
-    
+    overflow-x: scroll;
         td,th
         {
             vertical-align: middle;
@@ -102,13 +136,43 @@
         font-size: 50rem;
     }
     
-    thead tr{
-        border-bottom: 2px solid gainsboro !important;
-
+    thead{ 
+        height: 5rem;
+        tr{
+        border-bottom: 2px solid rgba($light-grey,0.6) ;
+            &:nth-child(:last-child) {
+                border-color: transparent !important;
+            }
         th{
             font-weight: 600;
+            font-size: 1.6rem;
+            font-style: italic;
+            color: $text-grey;
+
+            svg{
+                width: 2rem;
+            }
         }
     }
+}
+
+tbody{
+    tr td{
+    color: rgba($text-grey,0.7);
+    font-size:1.6rem;
+    font-weight: 500;
+
+    &.region-text{
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.4rem;
+
+        .region{
+            width: 2.4rem;
+        }
+    }
+}
+}
 
     .ranking,
     .pointer{
