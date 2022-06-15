@@ -1330,6 +1330,75 @@ section {
   .dental-clinic-section table td, .dental-clinic-section table th {
     vertical-align: middle; }
 
+.dental-clinic-section .wrappper {
+  height: 5rem !important;
+  width: 3rem !important;
+  border-radius: 5px !important;
+  background: #fff !important;
+  display: flex !important;
+  padding: 1rem 1.5rem !important;
+  align-items: center !important;
+  border: 1px solid #0069d9 !important;
+  justify-content: space-evenly !important; }
+
+.dental-clinic-section .wrappper .option {
+  background: #fff !important;
+  height: 50% !important;
+  width: 50% !important;
+  margin: 0rem 1rem !important;
+  border-radius: 5rem !important;
+  cursor: pointer !important;
+  border: 2px solid lightgrey !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important; }
+
+.dental-clinic-section #option-1:checked ~ .option-1,
+.dental-clinic-section #option-2:checked ~ .option-2,
+.dental-clinic-section #option-3:checked ~ .option-3,
+.dental-clinic-section #option-4:checked ~ .option-4 {
+  border-color: #0069d9;
+  background-color: #0069d9; }
+
+.dental-clinic-section .wrappper .option .dot {
+  height: 2rem;
+  width: 2rem;
+  background-color: #0069d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease; }
+
+.dental-clinic-section .wrappper .option .dot::before {
+  position: absolute;
+  content: "";
+  left: 0.4rem;
+  top: 0.4rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  background: #0069d9;
+  opacity: 0;
+  transition: all 0.3s ease; }
+
+.dental-clinic-section #option-1:checked ~ .option-1 .dot::before,
+.dental-clinic-section #option-2:checked ~ .option-2 .dot::before,
+.dental-clinic-section #option-3:checked ~ .option-3 .dot::before,
+.dental-clinic-section #option-4:checked ~ .option-4 .dot::before {
+  opacity: 1;
+  transform: scale(1); }
+
+.dental-clinic-section .wrappper .option span {
+  color: #808080;
+  font-size: 2rem; }
+
+.dental-clinic-section #option-1:checked ~ .option-1 span,
+.dental-clinic-section #option-2:checked ~ .option-2 span,
+.dental-clinic-section #option-3:checked ~ .option-3 span,
+.dental-clinic-section #option-4:checked ~ .option-4 span {
+  color: #fff; }
+
+.dental-clinic-section .wrapper input[type="radio"] {
+  display: none; }
+
 .dental-clinic-section .table-icon {
   font-weight: 50rem;
   font-size: 50rem; }
