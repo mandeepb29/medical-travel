@@ -5,9 +5,9 @@
     }
     
     .company{
-        height: 4rem;
+        height: 5.5rem;
         width: auto;
-        margin: 0.8rem 0;
+        margin: 0.3rem 0;
     }
     
     .type-icon {
@@ -21,8 +21,41 @@
     .card-header{
         padding: 1rem 2rem 0;
         border-bottom: 2px solid $brand-purple-light;
-        background-color: rgba($brand-purple-light,0.5) !important;
+        background-color: rgba($color-white,1) !important;
     }
+
+    .filters-categories,.filters-countries, .card-body{
+       /* width */
+    &::-webkit-scrollbar {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 2rem;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: rgba(#fff,0.25);
+    border-radius: 2rem;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $brand-purple-light;
+    border-radius: 2rem;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($brand-purple-light, 0.25);
+  }
+    }
+
+    .filters-categories{
+        &::-webkit-scrollbar {
+            height: 0rem;
+          } 
+    }
+
     
     .filters-categories {
         
@@ -105,9 +138,9 @@
                 padding: 0.4rem 0.8rem;
                 transition-duration: 0.15s;
                 border-radius: 0.4rem;
-                border:1.2px solid rgba($text-grey,0.2);
+                border:1.2px solid rgba($brand-purple-light,0.2);
                 white-space:  nowrap;
-
+                background-color: #fcf7f3;
             }
 
             input:checked + label{
@@ -213,6 +246,38 @@
         font-weight: 50rem;
         font-size: 50rem;
     }
+
+    .info-icon{
+        height: 2rem;
+        color: rgba($text-grey,0.4);
+        cursor: pointer;
+
+        & + .info-dialog{
+            top: 120%;
+            left:50%;
+            transform: translateX(-50%);
+            position: absolute;
+            transition:all 0.3s ease-in-out;
+            opacity: 0;
+            width: 100%;
+            visibility: hidden;
+            font-weight: 500;
+            color: $text-grey;
+            font-size: 1.2rem;
+            padding: 0.8rem 1.2rem;
+            text-align: left;
+            border-radius: 0.4rem;
+            background-color: $color-white;
+            box-shadow: $shadow-sm
+        }
+
+        &:hover{
+            & + .info-dialog{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
     
     thead{ 
         height: 5rem;
@@ -222,6 +287,7 @@
                 border-color: transparent !important;
             }
         th{
+            position: relative;
             font-weight: 600;
             font-size: 1.6rem;
             font-style: italic;
@@ -233,6 +299,21 @@
         }
     }
 }
+
+table{
+    padding: 0 2rem;
+    thead th, tbody td, tbody th{
+        padding: 0.5rem 1.2rem;
+    }
+
+    .first-col{
+        padding-left: 3rem;text-align: left;
+    }
+    .last-col{
+        padding-right: 3rem;text-align: right;
+    }
+}
+
 
 tbody{
     tr td{
@@ -251,14 +332,25 @@ tbody{
     }
 }
 }
+.card{
+    overflow: hidden;
+}
+.card-body{
+    overflow-x: scroll;
+}
 
     .ranking,
     .pointer{
+        
         font-size: 1.3rem;
         height: 2.3rem;
         vertical-align: middle;
         width: 1.8rem;
         margin-left: 0.2rem;
+    }
+
+    .ranking{
+        text-align: left;
     }
     
 }
