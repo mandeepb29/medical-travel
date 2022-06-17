@@ -826,6 +826,15 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
   display: inline-block;
   margin-top: 0.2rem; }
 
+
+  @media (max-width: 61.99em) {
+    .search-img {
+      max-height: 100% !important;
+      width: 100% !important;
+    }
+  
+  }
+
 .search-toggle {
   color: #404040;
   margin-left: 3rem;
@@ -1323,6 +1332,7 @@ section {
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem; }
   .dental-clinic-section .filters-categories .category-input {
+
     display: none; }
     .dental-clinic-section .filters-categories .category-input:checked + label {
       font-weight: 700; }
@@ -1670,3 +1680,4 @@ section {
 .after-img::before {
   content: "After";
   right: 1rem; }
+
