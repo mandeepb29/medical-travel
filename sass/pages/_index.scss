@@ -35,25 +35,26 @@
         background-size: 100%;
     }
 
-    &-list{
-        padding: 0;
-        list-style: none;
-        margin-top: 3rem;
+}
+
+.custom-list{
+    padding: 0;
+    list-style: none;
+    margin-top: 3rem;
+    
+    li{
+        display: flex;
+        align-items: center;
+        img{
+            width:auto;
+            height: 2rem;
+        }
         
-        li{
-            display: flex;
-            align-items: center;
-            img{
-                width:auto;
-                height: 2rem;
-            }
-            
-            p{
-                margin-left: 1rem;
-                margin-bottom: 0;
-                font-weight: 600;
-                color: $text-grey;
-            }
+        p{
+            margin-left: 1rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            color: $text-grey;
         }
     }
 }

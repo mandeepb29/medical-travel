@@ -7,6 +7,7 @@
     @include res(lg){
        justify-content: space-between;
        flex-direction: row-reverse;
+       flex-direction: column-reverse;
     }
    }
 
@@ -36,7 +37,8 @@
    }
 
    .filter-sortby{
-
+    max-width: 16rem;
+    min-width: 14rem;
     select{
         padding-top: 1.4rem;
         padding-bottom: 1.4rem;

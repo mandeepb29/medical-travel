@@ -39,3 +39,11 @@
 @import './pages/dental-clinic';
 @import './pages/free-quote';
 @import './pages/clinic-page';
+
+
+@include res(sm){
+        .search-img {
+          max-height: 100% !important;
+          width: 100% !important;
+        }
+}
