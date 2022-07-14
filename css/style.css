@@ -222,6 +222,9 @@ h6, .h6 {
 .text-left {
   text-align: left !important; }
 
+.overflow-hidden {
+  overflow: hidden !important; }
+
 .badge {
   padding: 0.8rem 1.4rem;
   background-color: #d1c9ee;
@@ -484,7 +487,11 @@ select, .form-select, input, .form-input {
     padding: 0.8rem 1rem; }
 
 .form-icon {
-  position: relative; }
+  position: relative;
+  flex-basis: 30%;
+  flex-grow: 2;
+  display: flex;
+  align-items: center; }
   .form-icon img {
     position: absolute;
     left: 1.2rem;
@@ -585,9 +592,22 @@ select:focus, select:active, .form-select:focus, .form-select:active, input:focu
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media (max-width: 47.99em) {
+        .result-card-body-footer .btn {
+          width: 100%; } }
     @media (max-width: 47.99em) {
       .result-card-body {
         margin-top: 1rem; } }
+    .result-card-body .price-desktop {
+      display: flex; }
+      @media (max-width: 47.99em) {
+        .result-card-body .price-desktop {
+          display: none !important; } }
+    .result-card-body .price-mobile {
+      display: none; }
+      @media (max-width: 47.99em) {
+        .result-card-body .price-mobile {
+          display: flex; } }
 
 .package-container {
   margin-top: 2rem; }
@@ -1029,17 +1049,17 @@ section {
     background-position: center 6rem;
     background-size: 100%; } }
 
-.hero-section-list {
+.custom-list {
   padding: 0;
   list-style: none;
   margin-top: 3rem; }
-  .hero-section-list li {
+  .custom-list li {
     display: flex;
     align-items: center; }
-    .hero-section-list li img {
+    .custom-list li img {
       width: auto;
       height: 2rem; }
-    .hero-section-list li p, .hero-section-list li .icon-text span, .icon-text .hero-section-list li span {
+    .custom-list li p, .custom-list li .icon-text span, .icon-text .custom-list li span {
       margin-left: 1rem;
       margin-bottom: 0;
       font-weight: 600;
@@ -1199,7 +1219,8 @@ section {
   @media (max-width: 74.99em) {
     .results-actions {
       justify-content: space-between;
-      flex-direction: row-reverse; } }
+      flex-direction: row-reverse;
+      flex-direction: column-reverse; } }
 
 @media (max-width: 74.99em) {
   .filter-box {
@@ -1217,13 +1238,15 @@ section {
     .filter-box.show {
       display: block; } }
 
-.filter-sortby select {
-  padding-top: 1.4rem;
-  padding-bottom: 1.4rem; }
-
-@media (max-width: 47.99em) {
-  .filter-sortby {
-    flex-grow: 1; } }
+.filter-sortby {
+  max-width: 16rem;
+  min-width: 14rem; }
+  .filter-sortby select {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem; }
+  @media (max-width: 47.99em) {
+    .filter-sortby {
+      flex-grow: 1; } }
 
 .body-overlay {
   overflow: hidden;
@@ -1254,258 +1277,233 @@ section {
   height: 2.5rem;
   width: 2.5rem; }
 
-.dental-clinic-section .card-body {
-  background-color: #ffffff; }
-
-.dental-clinic-section .company {
-  height: 5.5rem;
-  width: auto;
-  margin: 0.3rem 0; }
-
-.dental-clinic-section .type-icon {
-  width: 3rem; }
-
-.dental-clinic-section .flag {
-  width: 2.4rem; }
-
-.dental-clinic-section .card-header {
-  padding: 1rem 2rem 0;
-  border-bottom: 2px solid #d1c9ee;
-  background-color: white !important; }
-
-.dental-clinic-section .filters-categories, .dental-clinic-section .filters-countries, .dental-clinic-section .card-body {
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */ }
-  .dental-clinic-section .filters-categories::-webkit-scrollbar, .dental-clinic-section .filters-countries::-webkit-scrollbar, .dental-clinic-section .card-body::-webkit-scrollbar {
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 2rem; }
-  .dental-clinic-section .filters-categories::-webkit-scrollbar-track, .dental-clinic-section .filters-countries::-webkit-scrollbar-track, .dental-clinic-section .card-body::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 2rem; }
-  .dental-clinic-section .filters-categories::-webkit-scrollbar-thumb, .dental-clinic-section .filters-countries::-webkit-scrollbar-thumb, .dental-clinic-section .card-body::-webkit-scrollbar-thumb {
-    background: #d1c9ee;
-    border-radius: 2rem; }
-  .dental-clinic-section .filters-categories::-webkit-scrollbar-thumb:hover, .dental-clinic-section .filters-countries::-webkit-scrollbar-thumb:hover, .dental-clinic-section .card-body::-webkit-scrollbar-thumb:hover {
-    background: #d0c8ee; }
-
-.dental-clinic-section .filters-categories::-webkit-scrollbar {
-  height: 0rem; }
-
-.dental-clinic-section .filters-categories {
-  display: flex;
-  border-bottom: 1px solid #473198;
-  overflow-x: scroll; }
-  .dental-clinic-section .filters-categories .category-filter {
-    padding: 0; }
-    .dental-clinic-section .filters-categories .category-filter:nth-child(:last-child) label {
-      padding-right: 0; }
-    .dental-clinic-section .filters-categories .category-filter:nth-child(:first-child) label {
-      padding-left: 0; }
-  .dental-clinic-section .filters-categories .category-label {
-    margin: 0;
-    font-size: 1.6rem;
+.dental-clinic-section {
+  overflow: hidden; }
+  .dental-clinic-section .card-body {
+    background-color: #ffffff; }
+  .dental-clinic-section .company {
+    height: 5.5rem;
+    width: auto;
+    margin: 0.3rem 0; }
+  .dental-clinic-section .type-icon {
+    width: 3rem; }
+  .dental-clinic-section .flag {
+    width: 2.4rem; }
+  .dental-clinic-section .card-header {
+    padding: 1rem 2rem 0;
+    border-bottom: 2px solid #d1c9ee;
+    background-color: white !important; }
+  .dental-clinic-section .filters-categories, .dental-clinic-section .filters-countries, .dental-clinic-section .card-body {
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .dental-clinic-section .filters-categories::-webkit-scrollbar, .dental-clinic-section .filters-countries::-webkit-scrollbar, .dental-clinic-section .card-body::-webkit-scrollbar {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 2rem; }
+    .dental-clinic-section .filters-categories::-webkit-scrollbar-track, .dental-clinic-section .filters-countries::-webkit-scrollbar-track, .dental-clinic-section .card-body::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 2rem; }
+    .dental-clinic-section .filters-categories::-webkit-scrollbar-thumb, .dental-clinic-section .filters-countries::-webkit-scrollbar-thumb, .dental-clinic-section .card-body::-webkit-scrollbar-thumb {
+      background: #d1c9ee;
+      border-radius: 2rem; }
+    .dental-clinic-section .filters-categories::-webkit-scrollbar-thumb:hover, .dental-clinic-section .filters-countries::-webkit-scrollbar-thumb:hover, .dental-clinic-section .card-body::-webkit-scrollbar-thumb:hover {
+      background: #d0c8ee; }
+  .dental-clinic-section .filters-categories::-webkit-scrollbar {
+    height: 0rem; }
+  .dental-clinic-section .filters-categories {
+    display: flex;
+    border-bottom: 1px solid #473198;
+    overflow-x: scroll; }
+    .dental-clinic-section .filters-categories .category-filter {
+      padding: 0; }
+      .dental-clinic-section .filters-categories .category-filter:nth-child(:last-child) label {
+        padding-right: 0; }
+      .dental-clinic-section .filters-categories .category-filter:nth-child(:first-child) label {
+        padding-left: 0; }
+    .dental-clinic-section .filters-categories .category-label {
+      margin: 0;
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative; }
+      .dental-clinic-section .filters-categories .category-label::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        width: 0%;
+        transform-origin: center center;
+        left: 0;
+        height: 3px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem; }
+    .dental-clinic-section .filters-categories .category-input {
+      display: none; }
+      .dental-clinic-section .filters-categories .category-input:checked + label {
+        font-weight: 700; }
+        .dental-clinic-section .filters-categories .category-input:checked + label::before {
+          background-color: #473198;
+          width: 100%; }
+  .dental-clinic-section .filters-countries {
     padding: 1rem 2rem;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative; }
-    .dental-clinic-section .filters-categories .category-label::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      width: 0%;
-      transform-origin: center center;
-      left: 0;
-      height: 3px;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; }
-  .dental-clinic-section .filters-categories .category-input {
-    display: none; }
-    .dental-clinic-section .filters-categories .category-input:checked + label {
-      font-weight: 700; }
-      .dental-clinic-section .filters-categories .category-input:checked + label::before {
-        background-color: #473198;
-        width: 100%; }
-
-.dental-clinic-section .filters-countries {
-  padding: 1rem 2rem;
-  display: flex;
-  gap: 1rem;
-  overflow-x: scroll; }
-  .dental-clinic-section .filters-countries .flag-filter label {
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 0.4rem 0.8rem;
-    transition-duration: 0.15s;
-    border-radius: 0.4rem;
-    border: 1.2px solid rgba(209, 201, 238, 0.2);
-    white-space: nowrap;
-    background-color: #fcf7f3; }
-  .dental-clinic-section .filters-countries .flag-filter input:checked + label {
-    background-color: #473198;
-    color: #ffffff; }
-
-.dental-clinic-section table {
-  overflow-x: scroll; }
-  .dental-clinic-section table td, .dental-clinic-section table th {
-    vertical-align: middle; }
-
-.dental-clinic-section .wrappper {
-  height: 5rem !important;
-  width: 3rem !important;
-  border-radius: 5px !important;
-  background: #fff !important;
-  display: flex !important;
-  padding: 1rem 1.5rem !important;
-  align-items: center !important;
-  border: 1px solid #0069d9 !important;
-  justify-content: space-evenly !important; }
-
-.dental-clinic-section .wrappper .option {
-  background: #fff !important;
-  height: 50% !important;
-  width: 50% !important;
-  margin: 0rem 1rem !important;
-  border-radius: 5rem !important;
-  cursor: pointer !important;
-  border: 2px solid lightgrey !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-evenly !important; }
-
-.dental-clinic-section #option-1:checked ~ .option-1,
-.dental-clinic-section #option-2:checked ~ .option-2,
-.dental-clinic-section #option-3:checked ~ .option-3,
-.dental-clinic-section #option-4:checked ~ .option-4 {
-  border-color: #0069d9;
-  background-color: #0069d9; }
-
-.dental-clinic-section .wrappper .option .dot {
-  height: 2rem;
-  width: 2rem;
-  background-color: #0069d9;
-  border-radius: 50%;
-  position: relative;
-  transition: all 0.3s ease; }
-
-.dental-clinic-section .wrappper .option .dot::before {
-  position: absolute;
-  content: "";
-  left: 0.4rem;
-  top: 0.4rem;
-  height: 1.2rem;
-  width: 1.2rem;
-  background: #0069d9;
-  opacity: 0;
-  transition: all 0.3s ease; }
-
-.dental-clinic-section #option-1:checked ~ .option-1 .dot::before,
-.dental-clinic-section #option-2:checked ~ .option-2 .dot::before,
-.dental-clinic-section #option-3:checked ~ .option-3 .dot::before,
-.dental-clinic-section #option-4:checked ~ .option-4 .dot::before {
-  opacity: 1;
-  transform: scale(1); }
-
-.dental-clinic-section .wrappper .option span {
-  color: #808080;
-  font-size: 2rem; }
-
-.dental-clinic-section #option-1:checked ~ .option-1 span,
-.dental-clinic-section #option-2:checked ~ .option-2 span,
-.dental-clinic-section #option-3:checked ~ .option-3 span,
-.dental-clinic-section #option-4:checked ~ .option-4 span {
-  color: #fff; }
-
-.dental-clinic-section .wrapper input[type="radio"] {
-  display: none; }
-
-.dental-clinic-section .table-icon {
-  font-weight: 50rem;
-  font-size: 50rem; }
-
-.dental-clinic-section .info-icon {
-  height: 2rem;
-  color: rgba(64, 64, 64, 0.4);
-  cursor: pointer; }
-  .dental-clinic-section .info-icon + .info-dialog {
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 1rem;
+    overflow-x: scroll; }
+    .dental-clinic-section .filters-countries .flag-filter label {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 0.4rem 0.8rem;
+      transition-duration: 0.15s;
+      border-radius: 0.4rem;
+      border: 1.2px solid rgba(209, 201, 238, 0.2);
+      white-space: nowrap;
+      background-color: #fcf7f3; }
+    .dental-clinic-section .filters-countries .flag-filter input:checked + label {
+      background-color: #473198;
+      color: #ffffff; }
+  .dental-clinic-section table {
+    overflow-x: scroll; }
+    .dental-clinic-section table td, .dental-clinic-section table th {
+      vertical-align: middle; }
+  .dental-clinic-section .wrappper {
+    height: 5rem !important;
+    width: 3rem !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    display: flex !important;
+    padding: 1rem 1.5rem !important;
+    align-items: center !important;
+    border: 1px solid #0069d9 !important;
+    justify-content: space-evenly !important; }
+  .dental-clinic-section .wrappper .option {
+    background: #fff !important;
+    height: 50% !important;
+    width: 50% !important;
+    margin: 0rem 1rem !important;
+    border-radius: 5rem !important;
+    cursor: pointer !important;
+    border: 2px solid lightgrey !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important; }
+  .dental-clinic-section #option-1:checked ~ .option-1,
+  .dental-clinic-section #option-2:checked ~ .option-2,
+  .dental-clinic-section #option-3:checked ~ .option-3,
+  .dental-clinic-section #option-4:checked ~ .option-4 {
+    border-color: #0069d9;
+    background-color: #0069d9; }
+  .dental-clinic-section .wrappper .option .dot {
+    height: 2rem;
+    width: 2rem;
+    background-color: #0069d9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease; }
+  .dental-clinic-section .wrappper .option .dot::before {
     position: absolute;
-    transition: all 0.3s ease-in-out;
+    content: "";
+    left: 0.4rem;
+    top: 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    background: #0069d9;
     opacity: 0;
-    width: 100%;
-    visibility: hidden;
-    font-weight: 500;
-    color: #404040;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.2rem;
-    text-align: left;
-    border-radius: 0.4rem;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08); }
-  .dental-clinic-section .info-icon:hover + .info-dialog {
-    visibility: visible;
-    opacity: 1; }
-
-.dental-clinic-section thead {
-  height: 5rem; }
-  .dental-clinic-section thead tr {
-    border-bottom: 2px solid rgba(214, 214, 214, 0.6); }
-    .dental-clinic-section thead tr:nth-child(:last-child) {
-      border-color: transparent !important; }
-    .dental-clinic-section thead tr th {
-      position: relative;
-      font-weight: 600;
-      font-size: 1.6rem;
+    transition: all 0.3s ease; }
+  .dental-clinic-section #option-1:checked ~ .option-1 .dot::before,
+  .dental-clinic-section #option-2:checked ~ .option-2 .dot::before,
+  .dental-clinic-section #option-3:checked ~ .option-3 .dot::before,
+  .dental-clinic-section #option-4:checked ~ .option-4 .dot::before {
+    opacity: 1;
+    transform: scale(1); }
+  .dental-clinic-section .wrappper .option span {
+    color: #808080;
+    font-size: 2rem; }
+  .dental-clinic-section #option-1:checked ~ .option-1 span,
+  .dental-clinic-section #option-2:checked ~ .option-2 span,
+  .dental-clinic-section #option-3:checked ~ .option-3 span,
+  .dental-clinic-section #option-4:checked ~ .option-4 span {
+    color: #fff; }
+  .dental-clinic-section .wrapper input[type="radio"] {
+    display: none; }
+  .dental-clinic-section .table-icon {
+    font-weight: 50rem;
+    font-size: 50rem; }
+  .dental-clinic-section .info-icon {
+    height: 2rem;
+    color: rgba(64, 64, 64, 0.4);
+    cursor: pointer; }
+    .dental-clinic-section .info-icon + .info-dialog {
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      width: 100%;
+      visibility: hidden;
+      font-weight: 500;
+      color: #404040;
+      font-size: 1.2rem;
+      padding: 0.8rem 1.2rem;
+      text-align: left;
+      border-radius: 0.4rem;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08); }
+    .dental-clinic-section .info-icon:hover + .info-dialog {
+      visibility: visible;
+      opacity: 1; }
+  .dental-clinic-section thead {
+    height: 5rem; }
+    .dental-clinic-section thead tr {
+      border-bottom: 2px solid rgba(214, 214, 214, 0.6); }
+      .dental-clinic-section thead tr:nth-child(:last-child) {
+        border-color: transparent !important; }
+      .dental-clinic-section thead tr th {
+        position: relative;
+        font-weight: 600;
+        font-size: 1.6rem;
+        font-style: italic;
+        color: #404040; }
+        .dental-clinic-section thead tr th svg {
+          width: 2rem; }
+  .dental-clinic-section table {
+    padding: 0 2rem; }
+    .dental-clinic-section table thead th, .dental-clinic-section table tbody td, .dental-clinic-section table tbody th {
+      padding: 0.5rem 1.2rem; }
+    .dental-clinic-section table .first-col {
+      padding-left: 3rem;
+      text-align: left; }
+    .dental-clinic-section table .last-col {
+      padding-right: 3rem;
+      text-align: right; }
+  .dental-clinic-section tbody tr td {
+    color: rgba(64, 64, 64, 0.7);
+    font-size: 1.6rem;
+    font-weight: 500; }
+    .dental-clinic-section tbody tr td.region-text {
+      font-weight: 400;
       font-style: italic;
-      color: #404040; }
-      .dental-clinic-section thead tr th svg {
-        width: 2rem; }
-
-.dental-clinic-section table {
-  padding: 0 2rem; }
-  .dental-clinic-section table thead th, .dental-clinic-section table tbody td, .dental-clinic-section table tbody th {
-    padding: 0.5rem 1.2rem; }
-  .dental-clinic-section table .first-col {
-    padding-left: 3rem;
+      font-size: 1.4rem; }
+      .dental-clinic-section tbody tr td.region-text .region {
+        width: 2.4rem; }
+  .dental-clinic-section .card, .dental-clinic-section .blog-card, .dental-clinic-section .result-card, .dental-clinic-section .treatment-card-image, .dental-clinic-section .review-card {
+    overflow: hidden; }
+  .dental-clinic-section .card-body {
+    overflow-x: scroll; }
+  .dental-clinic-section .ranking,
+  .dental-clinic-section .pointer {
+    font-size: 1.3rem;
+    height: 2.3rem;
+    vertical-align: middle;
+    width: 1.8rem;
+    margin-left: 0.2rem; }
+  .dental-clinic-section .ranking {
     text-align: left; }
-  .dental-clinic-section table .last-col {
-    padding-right: 3rem;
-    text-align: right; }
-
-.dental-clinic-section tbody tr td {
-  color: rgba(64, 64, 64, 0.7);
-  font-size: 1.6rem;
-  font-weight: 500; }
-  .dental-clinic-section tbody tr td.region-text {
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.4rem; }
-    .dental-clinic-section tbody tr td.region-text .region {
-      width: 2.4rem; }
-
-.dental-clinic-section .card, .dental-clinic-section .blog-card, .dental-clinic-section .result-card, .dental-clinic-section .treatment-card-image, .dental-clinic-section .review-card {
-  overflow: hidden; }
-
-.dental-clinic-section .card-body {
-  overflow-x: scroll; }
-
-.dental-clinic-section .ranking,
-.dental-clinic-section .pointer {
-  font-size: 1.3rem;
-  height: 2.3rem;
-  vertical-align: middle;
-  width: 1.8rem;
-  margin-left: 0.2rem; }
-
-.dental-clinic-section .ranking {
-  text-align: left; }
 
 .quote-top, .contact-top {
   top: 0px;
@@ -1594,6 +1592,20 @@ section {
 .clinic-review-section {
   padding-bottom: 7rem !important; }
 
+.clinic-package-card {
+  max-width: 38rem;
+  margin: auto;
+  margin-top: 2rem; }
+  @media (max-width: 47.99em) {
+    .clinic-package-card {
+      max-width: 42rem; } }
+  .clinic-package-card .price {
+    margin: 1rem 0 0; }
+  .clinic-package-card li {
+    margin-bottom: 1rem; }
+    .clinic-package-card li p, .clinic-package-card li .icon-text span, .icon-text .clinic-package-card li span {
+      font-weight: 500; }
+
 .certificate-box {
   padding: 2rem 1rem 1rem;
   border-bottom: 1px solid #D6D6D6; }
@@ -1670,3 +1682,8 @@ section {
 .after-img::before {
   content: "After";
   right: 1rem; }
+
+@media (max-width: 47.99em) {
+  .search-img {
+    max-height: 100% !important;
+    width: 100% !important; } }

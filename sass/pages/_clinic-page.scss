@@ -78,6 +78,28 @@
         padding-bottom: 7rem !important;
 
     }
+
+    &-package-card{
+        max-width: 38rem;
+        margin: auto;
+        margin-top: 2rem;
+
+        @include res(sm){
+            max-width: 42rem;
+        }
+
+        .price{
+            margin: 1rem 0 0;
+        }
+
+        li{
+            margin-bottom: 1rem;
+
+            p{
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 .certificate-box{

@@ -46,11 +46,32 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .btn{
+                @include res(sm){
+                    width: 100%
+                  
+                }
+            }
+           
         }
 
         @include res(sm){
             margin-top: 1rem;
           
+        }
+
+        .price-desktop{
+            display: flex;
+            @include res(sm){
+                display: none !important;
+            }
+        }
+        .price-mobile{
+            display: none;
+            @include res(sm){
+                display: flex;
+            }
         }
     }
     
