@@ -14,7 +14,7 @@ function closeSearch($event) {
   $('#search-open').css('display', 'block');
   $('#search-close').css('display', 'none');
   }
-  //console.log("close search", $event.target.id);
+  console.log("close search", $event.target.id);
 }
 
 function showFilters(){
@@ -92,3 +92,35 @@ $(document).ready(function(){
     });
 
   });
+
+  //custom select js
+  const elSelectCustom = document.querySelectorAll(".js-selectCustom");
+
+  elSelectCustom.forEach(el => {
+    const elSelectCustomValue = el.children[0];
+    const elSelectCustomOptions = el.children[1];
+    const defaultLabel = elSelectCustomValue.getAttribute("data-value");
+    
+    // Listen for each custom option click
+    Array.from(elSelectCustomOptions.children).forEach(function (elOption) {
+      elOption.addEventListener("click", (e) => {
+        // Update custom select text too
+        elSelectCustomValue.textContent = e.target.textContent;
+        // Close select
+        el.classList.remove("isActive");
+      });
+    });
+    
+    // Toggle select on label click
+    elSelectCustomValue.addEventListener("click", (e) => {
+      el.classList.toggle("isActive");
+    });
+    
+    // close the custom select when clicking outside.
+    document.addEventListener("click", (e) => {
+      const didClickedOutside = !el.contains(event.target);
+      if (didClickedOutside) {
+        el.classList.remove("isActive");
+      }
+    });
+  })
