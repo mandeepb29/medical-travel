@@ -124,3 +124,10 @@ $(document).ready(function(){
       }
     });
   })
+
+
+
+  function toggleNavbar() {
+    var navbar = document.getElementById("websiteNavbar");
+    navbar.classList.toggle("navbar-open")
+  }

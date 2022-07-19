@@ -24,18 +24,20 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-xl navbar-light">
-   
-  
+  <nav class="navbar navbar-expand-xl navbar-light" id="websiteNavbar">
+
     <div class="navbar-primary">
       <div class="container container-custom align-items-center">
         <div class="navbar-logo-box">
+          <!--logo starts-->
           <a class="navbar-brand-1 text-decoration-none nav-left" href="./index.html">
             <img src="./img/logo-color.png">
             <span class="p-sm nav-text text-purple">
               the best place for medical tourism
             </span>
           </a>
+          <!--logo ends-->
+          <!--search/cross icon and search bar starts-->
           <img src="./img/search.svg" class="search-toggle" id="search-open" alt="open search" onclick="openSearch()">
           <img src="./img/x.svg" class="search-toggle" id="search-close" alt="close search" onclick="closeSearch()">
           <div class="search-box-1 pt-3">
@@ -44,14 +46,16 @@
                 name="search_header">
             </form>
           </div>
-        </div>
+          <!--search/cross icon and search bar ends-->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsablePart"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <!--hameburger menu button starts-->
+          <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbar()">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-        <div class="collapse navbar-collapse " id="navbarCollapsablePart">
+       <!--hameburger menu button ends-->
+        </div>
+ 
+        <div class="collapse navbar-collapse show navbar-primary-menu">
           <ul class="navbar-nav align-items-xl-center">
             <li class="nav-item">
               <a class="nav-link" href="./results.html">Destinations</a>
@@ -120,6 +124,7 @@
 
     <div class="navbar-secondary">
       <div class="menu container container-fluid">
+
         <div class="menu-header">
           <ul class="nav nav-pills">
             <div class="dropdown">
@@ -127,25 +132,25 @@
               <div class="dropdown-content">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Dental Implants</a>
                       <a href="#">Vaneers</a>
                       <a href="#">Dental Bridge</a>
                       <a href="#">Crowns</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">All in 4</a>
                       <a href="#">Gum Surgery/a>
                         <a href="#">Bone Craft</a>
                         <a href="#">Tooth Filing</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Tooth Extraction</a>
                       <a href="#">Teeth Whitening</a>
                       <a href="#">Sinus Lift</a>
                       <a href="#">Wisdom Tooth Extraction</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Root Canal Treatment</a>
                       <a href="#">Invisalign</a>
                       <a href="#">Teeth Cleaning</a>
@@ -160,19 +165,19 @@
               <div class="dropdown-content">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Dental Implants</a>
                       <a href="#">Vaneers</a>
                       <a href="#">Dental Bridge</a>
                       <a href="#">Crowns</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">All in 4</a>
                       <a href="#">Gum Surgery/a>
                         <a href="#">Bone Craft</a>
                         <a href="#">Tooth Filing</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Tooth Extraction</a>
                       <a href="#">Teeth Whitening</a>
                       <a href="#">Sinus Lift</a>
@@ -189,13 +194,13 @@
               <div class="dropdown-content">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Dental Implants</a>
                       <a href="#">Vaneers</a>
                       <a href="#">Dental Bridge</a>
                       <a href="#">Crowns</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">All in 4</a>
                       <a href="#">Gum Surgery/a>
                         <a href="#">Bone Craft</a>
@@ -212,7 +217,7 @@
               <div class="dropdown-content dropdown-content-right">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                       <a href="#">Dental Implants</a>
                       <a href="#">Vaneers</a>
                       <a href="#">Dental Bridge</a>

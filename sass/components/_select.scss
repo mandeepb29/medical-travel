@@ -14,15 +14,19 @@
   
   .selectCustom {
     position: relative;
-    min-width: 7rem;
+    min-width: 8rem;
   }
   
   .selectCustom-trigger {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     border: 1px solid $border-grey;
     border-radius: 5rem;
     cursor: pointer;
+
+    @include res(md) {
+      font-size: 2rem;
   }
+}
   
 
   .selectCustom-trigger {
@@ -31,6 +35,10 @@
     height: 100%;
     background-color: #fff;
     padding: 0.2rem 0.8rem;
+
+    @include res(md) {
+      padding:0.3rem 2.2rem;
+    }
   }
   
   .selectCustom-trigger::after {
@@ -61,6 +69,11 @@
     box-shadow: $shadow-md;
     z-index: 1;
     display: none;
+    z-index: 200;
+
+    @include res(md) {
+      font-size: 2rem;
+  }
   }
   
   .selectCustom.isActive .selectCustom-options {
