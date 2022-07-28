@@ -48,13 +48,14 @@
           </div>
           <!--search/cross icon and search bar ends-->
 
-           <!--hameburger menu button starts-->
-          <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-       <!--hameburger menu button ends-->
+          <!--hameburger menu button starts-->
+          <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
+            onclick="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--hameburger menu button ends-->
         </div>
- 
+
         <div class="collapse navbar-collapse show navbar-primary-menu">
           <ul class="navbar-nav align-items-xl-center">
             <li class="nav-item">
@@ -74,41 +75,57 @@
                 Quote</a>
             </li>
           </ul>
-      
+
           <div class="nav-right">
             <div class="d-flex align-items-center justify-content-between justify-content-xl-end gap-4">
               <div class="d-flex align-items-center">
                 <i class="header-icon" data-feather="globe"></i>
                 <p class="language">language</p>
-      
-                <div class="select">
-                  <div class="selectWrapper">
-                    <div class="selectCustom js-selectCustom">
-                      <div class="selectCustom-trigger">en</div>
-                      <div class="selectCustom-options">
-                        <div class="selectCustom-option" data-value="en">en</div>
-                        <div class="selectCustom-option" data-value="es">es</div>
-                        <div class="selectCustom-option" data-value="fr">fr</div>
-                      </div>
-                    </div>
+
+                <div class="header-select">
+                  <div class="header-select-text">
+                    en
+                  </div>
+                  <div class="header-dropdown">
+                    <ul class="header-dropdown-options">
+                      <li>
+                        <a data-value="en" href="">
+                          en
+                        </a>
+                      </li>
+                      <li>
+                        <a data-value="es" href="">es</a>
+                      </li>
+                      <li><a href="" data-value="fr">fr</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-      
+
               <div class="d-flex align-items-center">
                 <i class="header-icon" data-feather="dollar-sign"></i>
                 <p class="currency">currency</p>
-      
-                <div class="select">
-                  <div class="selectWrapper">
-                    <div class="selectCustom js-selectCustom">
-                      <div class="selectCustom-trigger">dollar</div>
-                      <div class="selectCustom-options">
-                        <div class="selectCustom-option" data-value="dollar">dollar</div>
-                        <div class="selectCustom-option" data-value="euro">euro</div>
-                        <div class="selectCustom-option" data-value="pound">pound</div>
-                      </div>
-                    </div>
+
+                <div class="header-select">
+                  <div class="header-select-text">
+                    dollar
+                  </div>
+                  <div class="header-dropdown header-dropdown-right">
+                    <ul class="header-dropdown-options">
+                      <li>
+                        <a data-value="dollar" href="">dollar</a>
+                      </li>
+                      <li>
+                        <a data-value="euro" href="">
+                          euro
+                        </a>
+                      </li>
+                      <li>
+                        <a data-value="pound" href="">
+                          pound
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -232,7 +249,7 @@
         </ul>
       </div>
     </div>
-   
+
     </div>
 
   </nav>

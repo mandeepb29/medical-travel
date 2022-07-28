@@ -420,7 +420,7 @@ h6, .h6 {
 
 .selectCustom-trigger::after {
   content: "";
-  background-image: url(/img/chevron-down.svg);
+  background-image: url(../img/chevron-down.svg);
   background-size: contain;
   width: 1.4rem;
   height: 1.4rem;
@@ -1116,6 +1116,10 @@ svg.header-icon {
       .dropdown-content .container {
         padding: 0; } }
 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
@@ -1126,9 +1130,68 @@ svg.header-icon {
     color: #473198;
     background-color: #FCF7F3; }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block; }
+.header-select {
+  position: relative;
+  padding: 0.8rem 0.2rem; }
+  .header-select-text {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #EDEDED;
+    border-radius: 6rem;
+    padding-right: 1.6rem;
+    min-width: 7.5rem; }
+    @media (max-width: 61.99em) {
+      .header-select-text {
+        min-width: 10rem; } }
+    @media (max-width: 61.99em) {
+      .header-select-text {
+        font-size: 2rem; } }
+  .header-select::after {
+    content: "";
+    background-image: url(../img/chevron-down.svg);
+    background-size: contain;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.8rem; }
+  .header-select:hover .header-dropdown {
+    display: block; }
+
+.header-dropdown {
+  display: none;
+  box-shadow: 0 0 6px 2px #00000039;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  z-index: 500; }
+  .header-dropdown-right {
+    left: auto;
+    right: 0; }
+  .header-dropdown-options {
+    list-style: none;
+    min-width: 8rem;
+    padding: 0;
+    margin-bottom: 0; }
+    @media (max-width: 61.99em) {
+      .header-dropdown-options {
+        min-width: 12rem; } }
+    .header-dropdown-options li a {
+      display: block;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.4rem;
+      color: #14080E;
+      font-weight: 500; }
+      .header-dropdown-options li a:hover {
+        background-color: #EDEDED;
+        color: #473198; }
+      @media (max-width: 61.99em) {
+        .header-dropdown-options li a {
+          font-size: 2rem; } }
 
 section {
   padding: 4.5rem 0;

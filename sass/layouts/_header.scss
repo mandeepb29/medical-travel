@@ -377,6 +377,12 @@ svg.header-icon {
     }
 }
 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -391,8 +397,84 @@ svg.header-icon {
     }
 }
 
+//header select
+.header-select{
+    position: relative;
+   padding: 0.8rem 0.2rem;
+    &-text{
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid $border-grey;
+        border-radius: 6rem;
+        padding-right: 1.6rem;
+        min-width: 7.5rem;
+        @include res(md){
+            min-width: 10rem;
+        }
+        @include res(md){
+            font-size: 2rem;
+        }
+    }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+    &::after {
+        content: "";
+        background-image: url(../img/chevron-down.svg);
+        background-size: contain;
+        width: 1.4rem;
+        height: 1.4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.8rem;
+      }
+    
+
+    &:hover{
+        .header-dropdown{
+            display: block;
+        }
+    }
+}
+
+.header-dropdown{
+    display: none;
+    box-shadow: 0 0 6px 2px #00000039;
+    position: absolute;
+    border-radius: 4px;
+    background-color: $color-white;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    z-index: 500;
+
+    &-right{
+        left: auto;
+        right: 0;
+    }
+    &-options{
+        list-style: none;
+        min-width: 8rem;
+        padding: 0;
+        margin-bottom: 0;
+        @include res(md){
+            min-width: 12rem;
+        }
+        li{a{
+            display: block;
+                padding: 0.8rem 1.6rem;
+                font-size: 1.4rem;
+                color: $brand-dark;
+                font-weight: 500;
+
+                &:hover{
+                    background-color: $border-grey;
+                    color: $brand-purple;
+                }
+
+                @include res(md){
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
